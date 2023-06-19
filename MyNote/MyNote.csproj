@@ -16,11 +16,13 @@
     <None Remove="Entites\" />
     <None Remove="Helpers\" />
     <None Remove="Data\" />
+    <None Remove="DBContext\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Entites\" />
     <Folder Include="Helpers\" />
     <Folder Include="Data\" />
+    <Folder Include="DBContext\" />
   </ItemGroup>
 </Project>

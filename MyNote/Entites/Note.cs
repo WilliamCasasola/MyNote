@@ -1,19 +1,31 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Xml.Linq;
 
 namespace MyNote.Entites
 {
-	[Table("Table")]
+	[Table("Note")]
 	public class Note
 	{
-        private int Id;
-        private String Text;
-        private bool IsGeneral;
+        [Key]
+        [Column("id")]
+        public int Id;
+        [Column("text")]
+        public String Text;
+        [Column("isGeneral")]
+        public bool IsGeneral;
 
         public Note()
 		{
 		}
+
+        public Note(int id, string text, bool isGeneral)
+        {
+            Id = id;
+            Text = text;
+            IsGeneral = isGeneral;
+        }
 
         public int GetId() { return Id; }
         public void SetId(int id) { Id = id; }

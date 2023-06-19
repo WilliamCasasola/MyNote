@@ -9,7 +9,7 @@ namespace MyNote.Entites
         private int IdMeeting;
         private int IdParticipant;
         private int IdNote;
-
+        
 
         public MeetingNote()
 		{

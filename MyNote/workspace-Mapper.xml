@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="969348b9-6432-45f7-bc74-2362fce9edad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.factorypath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/VisitorValidator/CSharpTranslatorVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/VisitorValidator/CSharpValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/VisitorValidator/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/VisitorValidator/DictionaryElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/VisitorValidator/DictionaryMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/VisitorValidator/Difference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/VisitorValidator/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gastmappers/javamapper/CU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gastvalidator/dictionaries/dictionary_CSharp.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gastmappers/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gastmappers/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gastmappers/csharpmapper/CSharpCompilationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gastmappers/csharpmapper/CSharpCompilationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gastmappers/csharpmapper/CSharpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gastmappers/csharpmapper/CSharpMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gastmappers/javamapper/JavaCompilationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gastmappers/javamapper/JavaCompilationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gastmappers/javamapper/JavaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gastmappers/javamapper/JavaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gastmappers/liemapper/LIECompilationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gastmappers/liemapper/LIECompilationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gastmappers/liemapper/LIEMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gastmappers/liemapper/LIEMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gastmappers/sb2mapper/SB2Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gastmappers/sb2mapper/SB2Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testrun/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testrun/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testrun/TransformationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testrun/TransformationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testrun/config/configurationTestRun.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testrun/config/configurationTestRun.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="COMPILER_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djps.track.ap.dependencies=false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1xCenCGTMdkj3VcPQSJ5xMV0fab" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.6003649" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="testrun.Main" />
+      <module name="avib.coderetriever.mapper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="969348b9-6432-45f7-bc74-2362fce9edad" name="Changes" comment="" />
+      <created>1629863662522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629863662522</updated>
+      <workItem from="1630178128002" duration="52000" />
+      <workItem from="1630369212343" duration="1448000" />
+      <workItem from="1630379536328" duration="436000" />
+      <workItem from="1630379992698" duration="1957000" />
+      <workItem from="1630552053017" duration="1607000" />
+      <workItem from="1631229730935" duration="741000" />
+      <workItem from="1631230494634" duration="410000" />
+      <workItem from="1631230987666" duration="600000" />
+      <workItem from="1631925196739" duration="540000" />
+      <workItem from="1632277066200" duration="596000" />
+      <workItem from="1644031883275" duration="61000" />
+      <workItem from="1655264517276" duration="1021000" />
+      <workItem from="1655507343452" duration="3677000" />
+      <workItem from="1655834971551" duration="75000" />
+      <workItem from="1661316772387" duration="334000" />
+      <workItem from="1661348437277" duration="215000" />
+      <workItem from="1661385687762" duration="866000" />
+      <workItem from="1661397715833" duration="511000" />
+      <workItem from="1661473924320" duration="519000" />
+      <workItem from="1661625639545" duration="816000" />
+      <workItem from="1661645025960" duration="3000" />
+      <workItem from="1682043154583" duration="116000" />
+      <workItem from="1682385103056" duration="2679000" />
+      <workItem from="1682395710525" duration="621000" />
+      <workItem from="1682396592503" duration="915000" />
+      <workItem from="1682397539545" duration="350000" />
+      <workItem from="1682468436538" duration="2223000" />
+      <workItem from="1682470780377" duration="963000" />
+      <workItem from="1682483825866" duration="1324000" />
+      <workItem from="1686680233613" duration="1350000" />
+      <workItem from="1686704031000" duration="922000" />
+      <workItem from="1686788629336" duration="1271000" />
+      <workItem from="1686792346128" duration="1353000" />
+      <workItem from="1687216880792" duration="2057000" />
+      <workItem from="1687231324966" duration="959000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gastmetrics/JavaCyclomaticComplexity.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/target/generated-sources/annotations/gastmappers/javamapper/JavaCompilationMapperImpl.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/target/generated-sources/annotations/gastmappers/javamapper/JavaCompilationMapperImpl.java</url>
+          <line>445</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/eclipse/jdt/org.eclipse.jdt.core/3.22.0/org.eclipse.jdt.core-3.22.0-sources.jar!/org/eclipse/jdt/core/dom/ASTParser.java</url>
+          <line>813</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/testrun/TransformationHandler.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gastmappers/csharpmapper/CSharpMapper.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project><?xml version="1.0" encoding="UTF-8" ?>
+

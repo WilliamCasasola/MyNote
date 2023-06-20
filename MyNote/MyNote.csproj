@@ -9,6 +9,8 @@
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="7.0.7" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +19,7 @@
     <None Remove="Helpers\" />
     <None Remove="Data\" />
     <None Remove="DBContext\" />
+    <None Remove="Data\IRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -24,5 +27,6 @@
     <Folder Include="Helpers\" />
     <Folder Include="Data\" />
     <Folder Include="DBContext\" />
+    <Folder Include="Data\IRepositories\" />
   </ItemGroup>
 </Project>

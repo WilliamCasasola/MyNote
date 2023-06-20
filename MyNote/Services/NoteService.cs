@@ -1,20 +1,22 @@
 ﻿using System;
 using MyNote.Data;
+using MyNote.Data.IRepositories;
+using MyNote.DBContext;
 using MyNote.Entites;
 
 namespace MyNote.Services
 {
 	public class NoteService
 	{
-		private NoteData _noteData;
-		public NoteService()
+		private INoteRepository _note;
+		public NoteService(INoteRepository note)
 		{
-			_noteData = new NoteData();
+			_note = note;
 		}
 
 		public List<Note> GetNotesData()
 		{
-			return _noteData.GetNotes();
+			return _note.GetNotes();
 		}
 	}
 }

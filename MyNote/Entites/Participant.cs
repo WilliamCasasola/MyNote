@@ -1,13 +1,23 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace MyNote.Entites
 {
 	public class Participant
 	{
+		[Key]
+		[Column("id")]
 		private string Id;
+		[Column("name")]
 		private string Name;
+		[Column("email")]
 		private string Email;
+		[Column("password")]
 		private string Password;
+		[Column("username")]
 		private string UserName;
+
 		public Participant()
 		{
 		}

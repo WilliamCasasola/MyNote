@@ -77,7 +77,7 @@ namespace MyNote.DBContext
 
         public DbSet<MeetingParticipant> _meetingParticipants;
 
-        public DbSet<MeetingParticipant> GetParticipantsNotes()
+        public DbSet<MeetingParticipant> GetMeetingParticipants()
         {
             return _meetingParticipants;
         }

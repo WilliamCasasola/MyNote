@@ -1,0 +1,1179 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee21e807-20b1-48bd-826c-be9d42e24e78" name="Changes" comment="Detection of attributes in class">
+      <change beforePath="$PROJECT_DIR$/src/main/java/metrics/codesmells/godClass/GodClassMetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/metrics/codesmells/godClass/GodClassMetric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/metrics/codesmells/visitors/JavaVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/metrics/codesmells/visitors/JavaVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testrun/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testrun/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testrun/config/configurationTestRun.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testrun/config/configurationTestRun.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GotoFileConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="Directory" />
+      <filtered-out-file-type name="ActionScript" />
+      <filtered-out-file-type name="AIDL" />
+      <filtered-out-file-type name="Android RenderScript" />
+      <filtered-out-file-type name="Android Room SQL" />
+      <filtered-out-file-type name="AndroidDataBinding" />
+      <filtered-out-file-type name="Angular2Html" />
+      <filtered-out-file-type name="Angular2Svg" />
+      <filtered-out-file-type name="AspectJ" />
+      <filtered-out-file-type name="AUTO_DETECTED" />
+      <filtered-out-file-type name="C#" />
+      <filtered-out-file-type name="C++" />
+      <filtered-out-file-type name="Cookie storage file" />
+      <filtered-out-file-type name="CSS" />
+      <filtered-out-file-type name="CSV/TSV" />
+      <filtered-out-file-type name="Cucumber" />
+      <filtered-out-file-type name="DGM" />
+      <filtered-out-file-type name="Dictionary" />
+      <filtered-out-file-type name="Dockerfile" />
+      <filtered-out-file-type name="DTD" />
+      <filtered-out-file-type name="Eclipse" />
+      <filtered-out-file-type name="ECMAScript 6" />
+      <filtered-out-file-type name="EditorConfig" />
+      <filtered-out-file-type name="Erlang" />
+      <filtered-out-file-type name="Flow" />
+      <filtered-out-file-type name="FTL" />
+      <filtered-out-file-type name="gdsl" />
+      <filtered-out-file-type name="GitExclude file" />
+      <filtered-out-file-type name="GitIgnore file" />
+      <filtered-out-file-type name="Groovy" />
+      <filtered-out-file-type name="GSP" />
+      <filtered-out-file-type name="GUI_DESIGNER_FORM" />
+      <filtered-out-file-type name="Haml" />
+      <filtered-out-file-type name="Haskell" />
+      <filtered-out-file-type name="HgIgnore file" />
+      <filtered-out-file-type name="HTML" />
+      <filtered-out-file-type name="HTTP Request" />
+      <filtered-out-file-type name="IDEA_MODULE" />
+      <filtered-out-file-type name="IDEA_PROJECT" />
+      <filtered-out-file-type name="IDEA_WORKSPACE" />
+      <filtered-out-file-type name="IDL" />
+      <filtered-out-file-type name="IgnoreLang file" />
+      <filtered-out-file-type name="IntegrationPerformanceTest" />
+      <filtered-out-file-type name="JavaFX" />
+      <filtered-out-file-type name="JavaScript" />
+      <filtered-out-file-type name="Jest Snapshot" />
+      <filtered-out-file-type name="JQL" />
+      <filtered-out-file-type name="JSHELL" />
+      <filtered-out-file-type name="JSHint" />
+      <filtered-out-file-type name="JSON" />
+      <filtered-out-file-type name="JSON-lines" />
+      <filtered-out-file-type name="JSON5" />
+      <filtered-out-file-type name="JSP" />
+      <filtered-out-file-type name="JSPX" />
+      <filtered-out-file-type name="JSX Harmony" />
+      <filtered-out-file-type name="Kotlin" />
+      <filtered-out-file-type name="Kotlin/Native Def" />
+      <filtered-out-file-type name="Less" />
+      <filtered-out-file-type name="logback" />
+      <filtered-out-file-type name="LOMBOK_CONFIG" />
+      <filtered-out-file-type name="Manifest" />
+      <filtered-out-file-type name="Markdown" />
+      <filtered-out-file-type name="MavenConfig" />
+      <filtered-out-file-type name="MultiDexKeep" />
+      <filtered-out-file-type name="PATCH" />
+      <filtered-out-file-type name="Perl" />
+      <filtered-out-file-type name="PHP" />
+      <filtered-out-file-type name="PLAIN_TEXT" />
+      <filtered-out-file-type name="Properties" />
+      <filtered-out-file-type name="protobuf" />
+      <filtered-out-file-type name="prototext" />
+      <filtered-out-file-type name="RegExp" />
+      <filtered-out-file-type name="RNG Compact" />
+      <filtered-out-file-type name="Sass" />
+      <filtered-out-file-type name="SCSS" />
+      <filtered-out-file-type name="Shell Script" />
+      <filtered-out-file-type name="Shrinker Config File" />
+      <filtered-out-file-type name="Smali" />
+      <filtered-out-file-type name="SourceMap" />
+      <filtered-out-file-type name="SPI" />
+      <filtered-out-file-type name="spring.binders" />
+      <filtered-out-file-type name="spring.factories" />
+      <filtered-out-file-type name="SQL" />
+      <filtered-out-file-type name="Stylus" />
+      <filtered-out-file-type name="SVG" />
+      <filtered-out-file-type name="textmate" />
+      <filtered-out-file-type name="tsconfig" />
+      <filtered-out-file-type name="TypeScript" />
+      <filtered-out-file-type name="TypeScript JSX" />
+      <filtered-out-file-type name="VTL" />
+      <filtered-out-file-type name="XHTML" />
+      <filtered-out-file-type name="XML" />
+      <filtered-out-file-type name="YAML" />
+      <filtered-out-file-type name="yarn.lock" />
+      <filtered-out-file-type name="AAB" />
+      <filtered-out-file-type name="AAR" />
+      <filtered-out-file-type name="Adobe Photoshop" />
+      <filtered-out-file-type name="Android 9-Patch" />
+      <filtered-out-file-type name="AndroidProfilerCpuCapture" />
+      <filtered-out-file-type name="AndroidProfilerMemoryAllocation" />
+      <filtered-out-file-type name="AndroidProfilerMemoryCapture" />
+      <filtered-out-file-type name="Angular Metadata JSON" />
+      <filtered-out-file-type name="APK" />
+      <filtered-out-file-type name="ARCHIVE" />
+      <filtered-out-file-type name="CLASS" />
+      <filtered-out-file-type name="CVP" />
+      <filtered-out-file-type name="Database Element" />
+      <filtered-out-file-type name="DATASOURCE_STORAGE" />
+      <filtered-out-file-type name="dependency diagram" />
+      <filtered-out-file-type name="DEX" />
+      <filtered-out-file-type name="Font" />
+      <filtered-out-file-type name="H2 Database" />
+      <filtered-out-file-type name="HeapProfd" />
+      <filtered-out-file-type name="HPROF" />
+      <filtered-out-file-type name="Image" />
+      <filtered-out-file-type name="JavaeeFacet" />
+      <filtered-out-file-type name="JFR" />
+      <filtered-out-file-type name="KJSM" />
+      <filtered-out-file-type name="KNM" />
+      <filtered-out-file-type name="kotlin_builtins" />
+      <filtered-out-file-type name="kotlin_module" />
+      <filtered-out-file-type name="Layout Inspector" />
+      <filtered-out-file-type name="Native" />
+      <filtered-out-file-type name="PersistenceUnit" />
+      <filtered-out-file-type name="ResourceBundle" />
+      <filtered-out-file-type name="script-definition-marker" />
+      <filtered-out-file-type name="SQLite" />
+      <filtered-out-file-type name="SQLite Database" />
+      <filtered-out-file-type name="TensorFlow Lite Model" />
+      <filtered-out-file-type name="UML" />
+      <filtered-out-file-type name="UNKNOWN" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Statement/ExpressionStatement.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/DeclarationAndDefinition/FunctionDefintion.class" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Expression/FunctionCallExpression.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Expression/QualifiedOverData.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Expression/Assign.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/DeclarationAndDefinition/Name.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Statement/BlockStatement.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Expression/IdentifierReference.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/DeclarationAndDefinition/VariableDefinition.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Types/NamedTypeReference.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Expression/BinaryExpression.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Statement/DeclarationOrDefinitionStatement.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Expression/ActualParameterExpression.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/avib/coderetriever/avib.coderetriever.gast/1.0/avib.coderetriever.gast-1.0.jar!/ASTMCore/ASTMSyntax/Expression/RealLiteral.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="24fjvrWL7jK1VAPtMHVlvAxLNTT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.6897038" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/test/resources/metrics" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/tests/metrics" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="metrics" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestMain">
+    <configuration name="TestMain" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="testrun.Main" />
+      <module name="avib.coderetriever.analyzer" />
+      <option name="VM_PARAMETERS" value="-Xmx6g" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CorrectorTest.shouldPassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="avib.coderetriever.analyzer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="metrics.codesmells.processors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="metrics.codesmells.processors" />
+      <option name="MAIN_CLASS_NAME" value="metrics.codesmells.processors.CorrectorTest" />
+      <option name="METHOD_NAME" value="shouldPassTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelperTest.shouldNotBeSetForReturnType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="avib.coderetriever.analyzer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="metrics.codesmells.visitors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="metrics.codesmells.visitors" />
+      <option name="MAIN_CLASS_NAME" value="metrics.codesmells.visitors.HelperTest" />
+      <option name="METHOD_NAME" value="shouldNotBeSetForReturnType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaVisitorTest.shouldVisitTheUnit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="avib.coderetriever.analyzer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="metrics.codesmells.visitors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="metrics.codesmells.visitors" />
+      <option name="MAIN_CLASS_NAME" value="metrics.codesmells.visitors.JavaVisitorTest" />
+      <option name="METHOD_NAME" value="shouldVisitTheUnit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JavaVisitorTest.shouldVisitTheUnit" />
+        <item itemvalue="JUnit.CorrectorTest.shouldPassTest" />
+        <item itemvalue="JUnit.HelperTest.shouldNotBeSetForReturnType" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee21e807-20b1-48bd-826c-be9d42e24e78" name="Changes" comment="" />
+      <created>1644028771517</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644028771517</updated>
+      <workItem from="1644028774309" duration="2616000" />
+      <workItem from="1644031796837" duration="1353000" />
+      <workItem from="1644292718289" duration="194000" />
+      <workItem from="1644461604968" duration="2346000" />
+      <workItem from="1645146458309" duration="3008000" />
+      <workItem from="1645240243732" duration="2876000" />
+      <workItem from="1645492673054" duration="4932000" />
+      <workItem from="1646192810668" duration="118000" />
+      <workItem from="1646273405981" duration="247000" />
+      <workItem from="1646348949102" duration="2526000" />
+      <workItem from="1646442727982" duration="3486000" />
+      <workItem from="1646447946744" duration="1470000" />
+      <workItem from="1646707379531" duration="2125000" />
+      <workItem from="1646878776765" duration="3121000" />
+      <workItem from="1647043632404" duration="187000" />
+      <workItem from="1647048202273" duration="1888000" />
+      <workItem from="1647309408824" duration="2658000" />
+      <workItem from="1647563524951" duration="3592000" />
+      <workItem from="1647920887260" duration="1426000" />
+      <workItem from="1648165779515" duration="827000" />
+      <workItem from="1648252587731" duration="1315000" />
+      <workItem from="1648512856114" duration="645000" />
+      <workItem from="1649027736262" duration="632000" />
+      <workItem from="1649029432166" duration="2625000" />
+      <workItem from="1649033968390" duration="143000" />
+      <workItem from="1649114173588" duration="1095000" />
+      <workItem from="1649207456146" duration="553000" />
+      <workItem from="1649460363182" duration="2086000" />
+      <workItem from="1649635884492" duration="1112000" />
+      <workItem from="1649973489111" duration="4267000" />
+      <workItem from="1649984241189" duration="4546000" />
+      <workItem from="1650213868162" duration="7858000" />
+      <workItem from="1650236861314" duration="5822000" />
+      <workItem from="1650597723690" duration="1446000" />
+      <workItem from="1650669642655" duration="1650000" />
+      <workItem from="1650747593174" duration="2703000" />
+      <workItem from="1650766138791" duration="9041000" />
+      <workItem from="1650811219719" duration="4071000" />
+      <workItem from="1651350352663" duration="5676000" />
+      <workItem from="1651364443401" duration="819000" />
+      <workItem from="1651437672707" duration="5535000" />
+      <workItem from="1652155529752" duration="1079000" />
+      <workItem from="1652238325215" duration="978000" />
+      <workItem from="1652321753852" duration="4997000" />
+      <workItem from="1652406938843" duration="5756000" />
+      <workItem from="1652478268854" duration="946000" />
+      <workItem from="1652492778618" duration="784000" />
+      <workItem from="1652567948823" duration="2228000" />
+      <workItem from="1652625385725" duration="3681000" />
+      <workItem from="1652657632379" duration="3683000" />
+      <workItem from="1652759475108" duration="2190000" />
+      <workItem from="1652927716608" duration="4173000" />
+      <workItem from="1653237889650" duration="1114000" />
+      <workItem from="1653251807727" duration="13344000" />
+      <workItem from="1653536197475" duration="1555000" />
+      <workItem from="1653869427584" duration="2135000" />
+      <workItem from="1654044532806" duration="9681000" />
+      <workItem from="1654134602813" duration="1816000" />
+      <workItem from="1654140944566" duration="2131000" />
+      <workItem from="1654228263901" duration="2726000" />
+      <workItem from="1654295652638" duration="1380000" />
+      <workItem from="1654486878599" duration="1391000" />
+      <workItem from="1654561837319" duration="3166000" />
+      <workItem from="1654643269182" duration="4816000" />
+      <workItem from="1655005037302" duration="3383000" />
+      <workItem from="1655084571414" duration="3286000" />
+      <workItem from="1655154265089" duration="932000" />
+      <workItem from="1655249260757" duration="2297000" />
+      <workItem from="1655262983712" duration="231000" />
+      <workItem from="1655263613323" duration="775000" />
+      <workItem from="1655507955029" duration="1167000" />
+      <workItem from="1655835052420" duration="180000" />
+      <workItem from="1655867015637" duration="6092000" />
+      <workItem from="1655953199900" duration="1919000" />
+      <workItem from="1656383594033" duration="4150000" />
+      <workItem from="1656772190707" duration="1175000" />
+      <workItem from="1656801605597" duration="14465000" />
+      <workItem from="1656874092909" duration="4303000" />
+      <workItem from="1656902746890" duration="4010000" />
+      <workItem from="1656961674462" duration="3231000" />
+      <workItem from="1656992982907" duration="1723000" />
+      <workItem from="1657244101587" duration="4417000" />
+      <workItem from="1657325821277" duration="102000" />
+      <workItem from="1657334581587" duration="6868000" />
+      <workItem from="1657591206498" duration="5720000" />
+      <workItem from="1657672092828" duration="6106000" />
+      <workItem from="1658198962571" duration="2719000" />
+      <workItem from="1658273666308" duration="8032000" />
+      <workItem from="1658533389195" duration="2548000" />
+      <workItem from="1658802686059" duration="779000" />
+      <workItem from="1658835257654" duration="3736000" />
+      <workItem from="1659007871720" duration="5467000" />
+      <workItem from="1659135513507" duration="1672000" />
+      <workItem from="1659152481554" duration="4044000" />
+      <workItem from="1659457850647" duration="2990000" />
+      <workItem from="1659851055574" duration="157000" />
+      <workItem from="1659896061795" duration="841000" />
+      <workItem from="1660174873933" duration="1102000" />
+      <workItem from="1660188664144" duration="694000" />
+      <workItem from="1660274440525" duration="1325000" />
+      <workItem from="1660346505148" duration="3432000" />
+      <workItem from="1660353114634" duration="29000" />
+      <workItem from="1660425917091" duration="4864000" />
+      <workItem from="1660693880643" duration="5833000" />
+      <workItem from="1660779020026" duration="6189000" />
+      <workItem from="1661027030953" duration="4131000" />
+      <workItem from="1661112480179" duration="7098000" />
+      <workItem from="1661209693589" duration="3234000" />
+      <workItem from="1661316459837" duration="645000" />
+      <workItem from="1661348440253" duration="213000" />
+      <workItem from="1661385691398" duration="1904000" />
+      <workItem from="1661397715876" duration="510000" />
+      <workItem from="1661473938840" duration="3523000" />
+      <workItem from="1661625639620" duration="2001000" />
+      <workItem from="1661645030531" duration="3127000" />
+      <workItem from="1661904413868" duration="875000" />
+      <workItem from="1661990574841" duration="11804000" />
+      <workItem from="1662032124238" duration="1740000" />
+      <workItem from="1662164921181" duration="9284000" />
+      <workItem from="1662426771029" duration="10371000" />
+      <workItem from="1662520860427" duration="4730000" />
+      <workItem from="1662609517591" duration="1320000" />
+      <workItem from="1662773570326" duration="848000" />
+      <workItem from="1662824426458" duration="279000" />
+      <workItem from="1662824713486" duration="4071000" />
+      <workItem from="1663118275650" duration="5578000" />
+      <workItem from="1663290435514" duration="4319000" />
+      <workItem from="1663304183725" duration="2237000" />
+      <workItem from="1663368678627" duration="1531000" />
+      <workItem from="1663442620172" duration="3996000" />
+      <workItem from="1663615959035" duration="558000" />
+      <workItem from="1663617548445" duration="11469000" />
+      <workItem from="1663720616196" duration="5847000" />
+      <workItem from="1663734269929" duration="285000" />
+      <workItem from="1663903220098" duration="2399000" />
+      <workItem from="1664154406864" duration="10350000" />
+      <workItem from="1664333175808" duration="441000" />
+      <workItem from="1664411404792" duration="6468000" />
+      <workItem from="1664501192936" duration="4104000" />
+      <workItem from="1664578320439" duration="1698000" />
+      <workItem from="1664757250468" duration="1718000" />
+      <workItem from="1664766361253" duration="1873000" />
+      <workItem from="1664852685111" duration="934000" />
+      <workItem from="1664930104764" duration="1318000" />
+      <workItem from="1664938774841" duration="3769000" />
+      <workItem from="1665144031112" duration="3739000" />
+      <workItem from="1665270558015" duration="1538000" />
+      <workItem from="1665431611397" duration="1959000" />
+      <workItem from="1665442123566" duration="3296000" />
+      <workItem from="1665447916996" duration="2871000" />
+      <workItem from="1665541251761" duration="2998000" />
+      <workItem from="1665711085358" duration="9197000" />
+      <workItem from="1666228043257" duration="7243000" />
+      <workItem from="1666318087744" duration="3064000" />
+      <workItem from="1666323402422" duration="3104000" />
+      <workItem from="1666453114711" duration="1262000" />
+      <workItem from="1666465983301" duration="11735000" />
+      <workItem from="1666656658010" duration="2774000" />
+      <workItem from="1666666808875" duration="1379000" />
+      <workItem from="1666754356086" duration="2612000" />
+      <workItem from="1666758161463" duration="426000" />
+      <workItem from="1666831857712" duration="3693000" />
+      <workItem from="1667184587227" duration="81000" />
+      <workItem from="1667188126277" duration="5290000" />
+      <workItem from="1667352267309" duration="200000" />
+      <workItem from="1667360633664" duration="1683000" />
+      <workItem from="1667528066931" duration="4000" />
+      <workItem from="1667528146280" duration="4841000" />
+      <workItem from="1667534347968" duration="449000" />
+      <workItem from="1667674664168" duration="9343000" />
+      <workItem from="1667769733044" duration="4176000" />
+      <workItem from="1667778130359" duration="2804000" />
+      <workItem from="1667781074020" duration="5804000" />
+      <workItem from="1667797398632" duration="1005000" />
+      <workItem from="1667864963354" duration="4149000" />
+      <workItem from="1667966244146" duration="54000" />
+      <workItem from="1667969851054" duration="587000" />
+      <workItem from="1668052849172" duration="5000" />
+      <workItem from="1668293594242" duration="1573000" />
+      <workItem from="1668297188864" duration="95000" />
+      <workItem from="1668472712909" duration="593000" />
+      <workItem from="1668473423543" duration="18000" />
+      <workItem from="1668565758510" duration="153000" />
+      <workItem from="1668973759601" duration="35000" />
+      <workItem from="1668985298681" duration="2547000" />
+      <workItem from="1668994010655" duration="419000" />
+      <workItem from="1669171582922" duration="4279000" />
+      <workItem from="1669256361360" duration="149000" />
+      <workItem from="1670115052245" duration="1771000" />
+      <workItem from="1670215912036" duration="7747000" />
+      <workItem from="1670268296579" duration="2125000" />
+      <workItem from="1670290339994" duration="4446000" />
+      <workItem from="1670469089859" duration="831000" />
+      <workItem from="1670473382981" duration="3219000" />
+      <workItem from="1670477421259" duration="394000" />
+      <workItem from="1670624374263" duration="1170000" />
+      <workItem from="1670991013233" duration="478000" />
+      <workItem from="1671077665809" duration="3015000" />
+      <workItem from="1671163323907" duration="850000" />
+      <workItem from="1671164309284" duration="98000" />
+      <workItem from="1671419569985" duration="4142000" />
+      <workItem from="1671506280057" duration="1705000" />
+      <workItem from="1671588763038" duration="724000" />
+      <workItem from="1671749987285" duration="2938000" />
+      <workItem from="1672374274545" duration="2882000" />
+      <workItem from="1672697819286" duration="1237000" />
+      <workItem from="1672967820470" duration="1783000" />
+      <workItem from="1673138451645" duration="825000" />
+      <workItem from="1673210323516" duration="252000" />
+      <workItem from="1673218129086" duration="5461000" />
+      <workItem from="1673412552167" duration="688000" />
+      <workItem from="1673478763541" duration="641000" />
+      <workItem from="1673581921560" duration="3039000" />
+      <workItem from="1673586977556" duration="137000" />
+      <workItem from="1673923191965" duration="565000" />
+      <workItem from="1674004632185" duration="4914000" />
+      <workItem from="1674014849567" duration="1097000" />
+      <workItem from="1674665198136" duration="337000" />
+      <workItem from="1675904819026" duration="563000" />
+      <workItem from="1675988843200" duration="313000" />
+      <workItem from="1676429543841" duration="300000" />
+      <workItem from="1676504107003" duration="489000" />
+      <workItem from="1676593783437" duration="558000" />
+      <workItem from="1676597556922" duration="5304000" />
+      <workItem from="1676607672633" duration="325000" />
+      <workItem from="1676686726790" duration="3333000" />
+      <workItem from="1676750211233" duration="5071000" />
+      <workItem from="1676767511475" duration="6409000" />
+      <workItem from="1676775984515" duration="233000" />
+      <workItem from="1676858228122" duration="4700000" />
+      <workItem from="1677033197870" duration="6700000" />
+      <workItem from="1677127340123" duration="1044000" />
+      <workItem from="1677264686866" duration="3807000" />
+      <workItem from="1677280615376" duration="3919000" />
+      <workItem from="1677303129437" duration="1946000" />
+      <workItem from="1677441761565" duration="560000" />
+      <workItem from="1677467521670" duration="45000" />
+      <workItem from="1677467679822" duration="4001000" />
+      <workItem from="1677473553219" duration="1039000" />
+      <workItem from="1677640256237" duration="1182000" />
+      <workItem from="1677739643568" duration="476000" />
+      <workItem from="1677741260678" duration="777000" />
+      <workItem from="1677815425604" duration="2000" />
+      <workItem from="1678154502709" duration="3048000" />
+      <workItem from="1678230006575" duration="1628000" />
+      <workItem from="1678232862882" duration="7430000" />
+      <workItem from="1678245175252" duration="1239000" />
+      <workItem from="1678279517328" duration="28000" />
+      <workItem from="1678337601698" duration="1287000" />
+      <workItem from="1678365161059" duration="2593000" />
+      <workItem from="1678413984750" duration="1353000" />
+      <workItem from="1678493909452" duration="4260000" />
+      <workItem from="1678579815799" duration="1212000" />
+      <workItem from="1678596361822" duration="2417000" />
+      <workItem from="1678672368909" duration="292000" />
+      <workItem from="1678712160609" duration="2955000" />
+      <workItem from="1678747314116" duration="14949000" />
+      <workItem from="1678843029262" duration="270000" />
+      <workItem from="1678843887056" duration="1929000" />
+      <workItem from="1678853908698" duration="2635000" />
+      <workItem from="1678856982047" duration="857000" />
+      <workItem from="1678922089735" duration="636000" />
+      <workItem from="1679111176147" duration="803000" />
+      <workItem from="1679153830689" duration="2218000" />
+      <workItem from="1679172274525" duration="1796000" />
+      <workItem from="1679243860404" duration="4083000" />
+      <workItem from="1679249877510" duration="969000" />
+      <workItem from="1679288648017" duration="2098000" />
+      <workItem from="1679338946419" duration="1807000" />
+      <workItem from="1679355676166" duration="4253000" />
+      <workItem from="1679369280328" duration="5683000" />
+      <workItem from="1679449517879" duration="10434000" />
+      <workItem from="1679513571946" duration="2355000" />
+      <workItem from="1679527108626" duration="4058000" />
+      <workItem from="1679541427003" duration="7751000" />
+      <workItem from="1679631126793" duration="9405000" />
+      <workItem from="1679760773458" duration="8297000" />
+      <workItem from="1679771915690" duration="3652000" />
+      <workItem from="1679796574612" duration="21266000" />
+      <workItem from="1679859315707" duration="5533000" />
+      <workItem from="1679877579078" duration="2636000" />
+      <workItem from="1679889038131" duration="3374000" />
+      <workItem from="1679894244140" duration="140000" />
+      <workItem from="1679960582366" duration="618000" />
+      <workItem from="1679970081563" duration="5191000" />
+      <workItem from="1679984716865" duration="28000" />
+      <workItem from="1679985029380" duration="457000" />
+      <workItem from="1680053171318" duration="486000" />
+      <workItem from="1680067110561" duration="22000" />
+      <workItem from="1680068344948" duration="201000" />
+      <workItem from="1680151957027" duration="2004000" />
+      <workItem from="1680310086187" duration="1371000" />
+      <workItem from="1680324944596" duration="11951000" />
+      <workItem from="1680379484355" duration="4586000" />
+      <workItem from="1680398801548" duration="2494000" />
+      <workItem from="1680409537516" duration="6283000" />
+      <workItem from="1680494767871" duration="13782000" />
+      <workItem from="1680587093549" duration="5150000" />
+      <workItem from="1680625134317" duration="9295000" />
+      <workItem from="1680639173994" duration="598000" />
+      <workItem from="1680640580151" duration="615000" />
+      <workItem from="1680643314126" duration="18179000" />
+      <workItem from="1680665744902" duration="6075000" />
+      <workItem from="1680674953204" duration="5707000" />
+      <workItem from="1680719497057" duration="686000" />
+      <workItem from="1680722275930" duration="10745000" />
+      <workItem from="1680738346950" duration="2567000" />
+      <workItem from="1680753077947" duration="738000" />
+      <workItem from="1680794324554" duration="7345000" />
+      <workItem from="1680828001261" duration="3555000" />
+      <workItem from="1680834125492" duration="6965000" />
+      <workItem from="1680894996755" duration="17000" />
+      <workItem from="1680986338853" duration="212000" />
+      <workItem from="1680990324426" duration="3493000" />
+      <workItem from="1680995113523" duration="730000" />
+      <workItem from="1681001144770" duration="15033000" />
+      <workItem from="1681022321705" duration="11000" />
+      <workItem from="1681023668342" duration="249000" />
+      <workItem from="1681059763896" duration="2000" />
+      <workItem from="1681071356155" duration="959000" />
+      <workItem from="1681091606731" duration="6197000" />
+      <workItem from="1681104287542" duration="439000" />
+      <workItem from="1681187087039" duration="1889000" />
+      <workItem from="1681273430574" duration="494000" />
+      <workItem from="1681275738851" duration="139000" />
+      <workItem from="1681358383915" duration="592000" />
+      <workItem from="1681360750580" duration="64000" />
+      <workItem from="1681435779953" duration="10124000" />
+      <workItem from="1681453945717" duration="189000" />
+      <workItem from="1681498478001" duration="755000" />
+      <workItem from="1681499387401" duration="169000" />
+      <workItem from="1681660824882" duration="22431000" />
+      <workItem from="1681696653357" duration="14947000" />
+      <workItem from="1681793436990" duration="1360000" />
+      <workItem from="1681963055613" duration="5134000" />
+      <workItem from="1682026235919" duration="2695000" />
+      <workItem from="1682030178729" duration="1055000" />
+      <workItem from="1682042699304" duration="4643000" />
+      <workItem from="1682133926513" duration="6942000" />
+      <workItem from="1682363944799" duration="1076000" />
+      <workItem from="1682385091884" duration="999000" />
+      <workItem from="1682471382278" duration="519000" />
+      <workItem from="1682483825865" duration="1090000" />
+      <workItem from="1682725108081" duration="4598000" />
+      <workItem from="1682735340073" duration="8831000" />
+      <workItem from="1682775058768" duration="1822000" />
+      <workItem from="1682792658164" duration="2461000" />
+      <workItem from="1682997406752" duration="3434000" />
+      <workItem from="1683084779622" duration="6715000" />
+      <workItem from="1683165427292" duration="3447000" />
+      <workItem from="1683509209303" duration="4745000" />
+      <workItem from="1683605276421" duration="1939000" />
+      <workItem from="1683659509571" duration="841000" />
+      <workItem from="1683678857112" duration="272000" />
+      <workItem from="1683682470962" duration="4695000" />
+      <workItem from="1683862877914" duration="991000" />
+      <workItem from="1684010418498" duration="4348000" />
+      <workItem from="1684095424309" duration="3570000" />
+      <workItem from="1684110477268" duration="5144000" />
+      <workItem from="1684121011820" duration="3047000" />
+      <workItem from="1684183149341" duration="5484000" />
+      <workItem from="1684193076191" duration="20946000" />
+      <workItem from="1684250228423" duration="14956000" />
+      <workItem from="1684271814194" duration="185000" />
+      <workItem from="1684542041767" duration="2926000" />
+      <workItem from="1684553845103" duration="8558000" />
+      <workItem from="1684611262978" duration="2805000" />
+      <workItem from="1684645576519" duration="3298000" />
+      <workItem from="1684682798433" duration="5776000" />
+      <workItem from="1684703336281" duration="7906000" />
+      <workItem from="1684783038087" duration="2183000" />
+      <workItem from="1684815870222" duration="2635000" />
+      <workItem from="1684981039668" duration="13373000" />
+      <workItem from="1685057940836" duration="1191000" />
+      <workItem from="1685218435299" duration="4916000" />
+      <workItem from="1685237455573" duration="9961000" />
+      <workItem from="1685296091861" duration="2303000" />
+      <workItem from="1685305470318" duration="10206000" />
+      <workItem from="1685319461731" duration="4606000" />
+      <workItem from="1685326866243" duration="3853000" />
+      <workItem from="1685403304053" duration="2690000" />
+      <workItem from="1685488631350" duration="2249000" />
+      <workItem from="1685499261882" duration="6128000" />
+      <workItem from="1685534136041" duration="2434000" />
+      <workItem from="1685559493725" duration="1164000" />
+      <workItem from="1685589712819" duration="1547000" />
+      <workItem from="1685662991097" duration="3662000" />
+      <workItem from="1685668595583" duration="112000" />
+      <workItem from="1685675832460" duration="1452000" />
+      <workItem from="1685706700300" duration="4697000" />
+      <workItem from="1685904297388" duration="6813000" />
+      <workItem from="1685924604051" duration="7426000" />
+      <workItem from="1686018861942" duration="2848000" />
+      <workItem from="1686100113593" duration="2031000" />
+      <workItem from="1686191056541" duration="4469000" />
+      <workItem from="1686223513667" duration="4854000" />
+      <workItem from="1686228487103" duration="461000" />
+      <workItem from="1686271191593" duration="3336000" />
+      <workItem from="1686354728954" duration="4863000" />
+      <workItem from="1686418060586" duration="1901000" />
+      <workItem from="1686434498962" duration="2290000" />
+      <workItem from="1686440099880" duration="393000" />
+      <workItem from="1686529945602" duration="1856000" />
+      <workItem from="1686679826453" duration="1010000" />
+      <workItem from="1686681923457" duration="74000" />
+      <workItem from="1686702610832" duration="1752000" />
+      <workItem from="1686788632207" duration="1633000" />
+      <workItem from="1686792346528" duration="1739000" />
+      <workItem from="1686800672175" duration="494000" />
+      <workItem from="1687147159711" duration="8000" />
+      <workItem from="1687149571069" duration="1889000" />
+      <workItem from="1687210233870" duration="1677000" />
+      <workItem from="1687215187991" duration="3123000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:io.netty:netty-all" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.equinox.registry" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:jul-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-hdfs" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.equinox.preferences" />
+    <option featureType="dependencySupport" implementationName="java:org.javassist:javassist" />
+    <option featureType="dependencySupport" implementationName="java:org.hamcrest:hamcrest-core" />
+    <option featureType="dependencySupport" implementationName="java:org.json4s:json4s-scalap_2.12" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jersey.core:jersey-common" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:accessors-smart" />
+    <option featureType="dependencySupport" implementationName="java:com.google.j2objc:j2objc-annotations" />
+    <option featureType="dependencySupport" implementationName="java:com.googlecode.json-simple:json-simple" />
+    <option featureType="dependencySupport" implementationName="java:org.codehaus.jackson:jackson-mapper-asl" />
+    <option featureType="dependencySupport" implementationName="java:com.ning:compress-lzf" />
+    <option featureType="dependencySupport" implementationName="java:com.google.code.gson:gson" />
+    <option featureType="dependencySupport" implementationName="java:org.json4s:json4s-ast_2.12" />
+    <option featureType="dependencySupport" implementationName="java:io.dropwizard.metrics:metrics-jvm" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-mapreduce-client-common" />
+    <option featureType="dependencySupport" implementationName="java:commons-io:commons-io" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.hk2:hk2-api" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.xbean:xbean-asm7-shaded" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.htrace:htrace-core" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-mapreduce-client-jobclient" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.spark:spark-network-shuffle_2.12" />
+    <option featureType="dependencySupport" implementationName="java:xerces:xercesImpl" />
+    <option featureType="dependencySupport" implementationName="java:org.scala-lang:scala-library" />
+    <option featureType="dependencySupport" implementationName="java:com.google.errorprone:error_prone_annotations" />
+    <option featureType="dependencySupport" implementationName="java:commons-lang:commons-lang" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.avro:avro" />
+    <option featureType="dependencySupport" implementationName="java:org.objenesis:objenesis" />
+    <option featureType="dependencySupport" implementationName="java:org.codehaus.jackson:jackson-xc" />
+    <option featureType="dependencySupport" implementationName="java:junit:junit" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jersey.core:jersey-client" />
+    <option featureType="dependencySupport" implementationName="java:net.sf.py4j:py4j" />
+    <option featureType="dependencySupport" implementationName="java:com.google.guava:listenablefuture" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.hk2.external:aopalliance-repackaged" />
+    <option featureType="dependencySupport" implementationName="java:commons-net:commons-net" />
+    <option featureType="dependencySupport" implementationName="java:org.codehaus.jackson:jackson-jaxrs" />
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jersey.media:jersey-media-jaxb" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-common" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.httpcomponents:httpcore" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.curator:curator-recipes" />
+    <option featureType="dependencySupport" implementationName="java:org.checkerframework:checker-qual" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.commons:commons-lang3" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-client" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.equinox.app" />
+    <option featureType="dependencySupport" implementationName="java:xmlenc:xmlenc" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-yarn-client" />
+    <option featureType="dependencySupport" implementationName="java:org.json:json" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-databind" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.directory.api:api-asn1-api" />
+    <option featureType="dependencySupport" implementationName="java:com.thoughtworks.paranamer:paranamer" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.avro:avro-ipc" />
+    <option featureType="dependencySupport" implementationName="java:commons-collections:commons-collections" />
+    <option featureType="dependencySupport" implementationName="java:com.esotericsoftware:minlog" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:slf4j-api" />
+    <option featureType="dependencySupport" implementationName="java:org.ow2.asm:asm" />
+    <option featureType="dependencySupport" implementationName="java:org.tukaani:xz" />
+    <option featureType="dependencySupport" implementationName="java:com.google.guava:guava" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.core.filesystem" />
+    <option featureType="dependencySupport" implementationName="java:commons-configuration:commons-configuration" />
+    <option featureType="dependencySupport" implementationName="java:com.ibm.icu:icu4j" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.zookeeper:zookeeper" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.equinox.common" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.commons:commons-math3" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-auth" />
+    <option featureType="dependencySupport" implementationName="java:javax.servlet.jsp:jsp-api" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.httpcomponents:httpclient" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.spark:spark-launcher_2.12" />
+    <option featureType="dependencySupport" implementationName="java:it.unimi.dsi:fastutil" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.commons:commons-crypto" />
+    <option featureType="dependencySupport" implementationName="java:org.mortbay.jetty:jetty-sslengine" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.osgi" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.directory.api:api-util" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-annotations" />
+    <option featureType="dependencySupport" implementationName="java:io.dropwizard.metrics:metrics-graphite" />
+    <option featureType="dependencySupport" implementationName="java:org.lz4:lz4-java" />
+    <option featureType="dependencySupport" implementationName="java:commons-codec:commons-codec" />
+    <option featureType="dependencySupport" implementationName="java:org.spark-project.spark:unused" />
+    <option featureType="dependencySupport" implementationName="java:commons-cli:commons-cli" />
+    <option featureType="dependencySupport" implementationName="java:org.mortbay.jetty:jetty-util" />
+    <option featureType="dependencySupport" implementationName="java:xml-apis:xml-apis" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-mapreduce-client-shuffle" />
+    <option featureType="dependencySupport" implementationName="java:javax.activation:activation" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.spark:spark-tags_2.12" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.commons:commons-text" />
+    <option featureType="dependencySupport" implementationName="java:javax.validation:validation-api" />
+    <option featureType="dependencySupport" implementationName="java:tech.tablesaw:tablesaw-core" />
+    <option featureType="dependencySupport" implementationName="java:commons-httpclient:commons-httpclient" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.directory.server:apacheds-i18n" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.spark:spark-unsafe_2.12" />
+    <option featureType="dependencySupport" implementationName="java:org.roaringbitmap:RoaringBitmap" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.ivy:ivy" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-yarn-server-common" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.core.commands" />
+    <option featureType="dependencySupport" implementationName="java:io.dropwizard.metrics:metrics-json" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.avro:avro-mapred" />
+    <option featureType="dependencySupport" implementationName="java:com.esotericsoftware:kryo-shaded" />
+    <option featureType="dependencySupport" implementationName="java:com.jayway.jsonpath:json-path" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.core.expressions" />
+    <option featureType="dependencySupport" implementationName="java:com.owlike:genson" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.core.contenttype" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.commons:commons-compress" />
+    <option featureType="dependencySupport" implementationName="java:com.twitter:chill_2.12" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.ws.rs:jakarta.ws.rs-api" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.hk2:osgi-resource-locator" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.core.resources" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jersey.inject:jersey-hk2" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.module:jackson-module-scala_2.12" />
+    <option featureType="dependencySupport" implementationName="java:org.codehaus.jackson:jackson-core-asl" />
+    <option featureType="dependencySupport" implementationName="java:org.fusesource.leveldbjni:leveldbjni-all" />
+    <option featureType="dependencySupport" implementationName="java:com.twitter:chill-java" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.curator:curator-client" />
+    <option featureType="dependencySupport" implementationName="java:org.antlr:antlr4-runtime" />
+    <option featureType="dependencySupport" implementationName="java:com.github.luben:zstd-jni" />
+    <option featureType="dependencySupport" implementationName="java:com.univocity:univocity-parsers" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jersey.core:jersey-server" />
+    <option featureType="dependencySupport" implementationName="java:org.json4s:json4s-core_2.12" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.spark:spark-network-common_2.12" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.spark:spark-kvstore_2.12" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.yetus:audience-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.xerial.snappy:snappy-java" />
+    <option featureType="dependencySupport" implementationName="java:org.jetbrains:annotations" />
+    <option featureType="dependencySupport" implementationName="java:javax.xml.bind:jaxb-api" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jersey.containers:jersey-container-servlet" />
+    <option featureType="dependencySupport" implementationName="java:oro:oro" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-yarn-api" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-core" />
+    <option featureType="dependencySupport" implementationName="java:avib.coderetriever:avib.coderetriever.mapper" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:jcl-over-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.directory.server:apacheds-kerberos-codec" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.annotation:jakarta.annotation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.hk2:hk2-locator" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.jdt:org.eclipse.jdt.core" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.text" />
+    <option featureType="dependencySupport" implementationName="java:org.scala-lang.modules:scala-xml_2.12" />
+    <option featureType="dependencySupport" implementationName="java:org.json4s:json4s-jackson_2.12" />
+    <option featureType="dependencySupport" implementationName="java:io.dropwizard.metrics:metrics-core" />
+    <option featureType="dependencySupport" implementationName="java:com.google.code.findbugs:jsr305" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.hk2.external:jakarta.inject" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.core.jobs" />
+    <option featureType="dependencySupport" implementationName="java:commons-beanutils:commons-beanutils" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-mapreduce-client-core" />
+    <option featureType="dependencySupport" implementationName="java:net.razorvine:pyrolite" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.module:jackson-module-paranamer" />
+    <option featureType="dependencySupport" implementationName="java:org.eclipse.platform:org.eclipse.core.runtime" />
+    <option featureType="dependencySupport" implementationName="java:com.github.opendevl:json2flat" />
+    <option featureType="dependencySupport" implementationName="java:org.mapstruct:mapstruct-jdk8" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.spark:spark-core_2.12" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-mapreduce-client-app" />
+    <option featureType="dependencySupport" implementationName="java:commons-digester:commons-digester" />
+    <option featureType="dependencySupport" implementationName="java:com.google.guava:failureaccess" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.hk2:hk2-utils" />
+    <option featureType="dependencySupport" implementationName="java:com.clearspring.analytics:stream" />
+    <option featureType="dependencySupport" implementationName="java:org.roaringbitmap:shims" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jersey.containers:jersey-container-servlet-core" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:json-smart" />
+    <option featureType="dependencySupport" implementationName="java:javax.annotation:javax.annotation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:slf4j-log4j12" />
+    <option featureType="dependencySupport" implementationName="java:avib.coderetriever:avib.coderetriever.gast" />
+    <option featureType="dependencySupport" implementationName="java:javax.xml.stream:stax-api" />
+    <option featureType="dependencySupport" implementationName="java:io.github.classgraph:classgraph" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.curator:curator-framework" />
+    <option featureType="dependencySupport" implementationName="java:javax.servlet:javax.servlet-api" />
+    <option featureType="dependencySupport" implementationName="java:org.scala-lang:scala-reflect" />
+    <option featureType="dependencySupport" implementationName="java:log4j:log4j" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-yarn-common" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Detection of attributes in class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Detection of attributes in class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/longParamList/process/LongParamProcessor.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/visitors/JavaVisitor.java</url>
+          <line>195</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/visitors/JavaVisitor.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/cloneDetection/detector/DataExtractor.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="222" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/MetricFactory.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/run/ConfigurationReader.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="280" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/processors/GeneralProcessor.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/visitors/Encoder.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="338" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/process/MVCProcessor.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="370" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/brainRepository/BrainRepositoryMetric.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="379" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/domain/MVCDataCodeSmell.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="380" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/domain/MVCDataCodeSmell.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="407" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/brainRepository/BrainRepositoryMetric.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="424" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.12/3.0.0-preview/spark-core_2.12-3.0.0-preview.jar!/org/apache/spark/SparkContext.class</url>
+          <line>1952</line>
+          <option name="timeStamp" value="535" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/MetricFactory.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="547" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/brainMethod/BrainMethodMetric.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="549" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/featureEnvy/process/FeatureEnvyProcessor.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="553" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/promiscuousController/PromiscuousControllerMetric.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="572" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/brainController/BrainControllerMetric.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="577" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/brainController/BrainControllerMetric.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="578" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/brainController/BrainControllerMetric.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="579" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/meddlingService/MeddlingServiceMetric.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="580" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/meddlingService/MeddlingServiceMetric.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="581" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/laboriousRepositoryMethod/LaboriousRepositoryMethodMetric.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="585" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/featureEnvy/FeatureEnvyMetric.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="591" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/featureEnvy/FeatureEnvyMetric.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="593" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/fatRepository/FatRepositoryMetric.java</url>
+          <line>44</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="665" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/longParamList/process/LongParamProcessor.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="668" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/processors/GeneralProcessor.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="716" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/processors/TypeCorrector.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="717" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/processors/TypeCorrector.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="735" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/promiscuousController/PromiscuousControllerMetric.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="739" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/godClass/GodClassMetric.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="742" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/godClass/GodClassMetric.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="758" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/processors/TypeCorrector.java</url>
+          <line>177</line>
+          <option name="timeStamp" value="759" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/metrics/codesmells/processors/CorrectorTest.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="773" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/metrics/codesmells/processors/CorrectorTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="774" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/metrics/codesmells/processors/CorrectorTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="777" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/metrics/codesmells/visitors/JavaVisitorTest.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="784" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/metrics/codesmells/visitors/JavaVisitorTest.java</url>
+          <line>143</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="807" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/godClass/GodClassMetric.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="808" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/run/ConfigurationReader.java</url>
+          <line>334</line>
+          <option name="timeStamp" value="811" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/domain/MVCDataCodeSmell.java</url>
+          <line>114</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="812" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/visitors/JavaVisitor.java</url>
+          <line>425</line>
+          <option name="timeStamp" value="813" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/domain/MVCDataCodeSmell.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="814" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/visitors/JavaVisitor.java</url>
+          <line>330</line>
+          <option name="timeStamp" value="816" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/metrics/codesmells/mvc/brainRepository/BrainRepositoryMetric.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="817" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.RuntimeException" memberName="cause" />
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="key" />
+        <PinnedItemInfo parentTag="metrics.codesmells.domain.MVCDataCodeSmell" memberName="methods" />
+        <PinnedItemInfo parentTag="metrics.codesmells.godClass.GodClassResult" memberName="classData" />
+        <PinnedItemInfo parentTag="metrics.codesmells.godClass.visitors.JavaVisitor" memberName="frame" />
+        <PinnedItemInfo parentTag="metrics.codesmells.godClass.domain.AttributeDataGodClass" memberName="usedInMethods" />
+        <PinnedItemInfo parentTag="metrics.codesmells.godClass.domain.MethodDataGodClass" memberName="cycloMatic" />
+        <PinnedItemInfo parentTag="com.fasterxml.jackson.databind.node.ObjectNode" memberName="_children" />
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="value" />
+        <PinnedItemInfo parentTag="metrics.codesmells.godClass.domain.MethodDataGodClass" memberName="classAttributes" />
+        <PinnedItemInfo parentTag="metrics.codesmells.domain.ClassDataCodeSmell" memberName="methods" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/analyzer$TestMain.ic" NAME="TestMain Coverage Results" MODIFIED="1685245864070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project><?xml version="1.0" encoding="UTF-8" ?>
+

@@ -12,10 +12,10 @@ namespace MyNote.Controllers
         private readonly ILogger<NoteController> _logger;
         private readonly NoteService _noteService;
 
-        public NoteController(ILogger<NoteController> logger)
+        public NoteController(ILogger<NoteController> logger, NoteService noteService)
         {
             _logger = logger;
-            _noteService = new NoteService();
+            _noteService = noteService;
         }
 
         [HttpGet(Name = "getNotes")]

@@ -1,4 +1,11 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using System.Reflection;
+using Microsoft.EntityFrameworkCore;
+using MyNote.Data;
+using MyNote.Data.IRepositories;
+using MyNote.DBContext;
+using MyNote.Services;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -6,6 +13,14 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<MyNoteContext>();
+
+builder.Services.AddScoped<IMeetingRepository, MeetingRepository>();
+builder.Services.AddScoped<INoteRepository, NoteRepository>();
+builder.Services.AddScoped<IParticipantRepository, ParticipantRepository>();
+
+builder.Services.AddScoped<NoteService>();
 
 var app = builder.Build();
 

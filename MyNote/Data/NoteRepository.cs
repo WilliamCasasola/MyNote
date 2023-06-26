@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using MyNote.Data.IRepositories;
+﻿using MyNote.Data.IRepositories;
 using MyNote.DBContext;
 using MyNote.Entites;
 
@@ -11,7 +9,6 @@ namespace MyNote.Data
 		private readonly MyNoteContext _myNote;
 		public NoteRepository(MyNoteContext myNote)	
 		{
-			int t = 0;
 			_myNote = myNote;
 			
 				//_myNote.Database.EnsureCreated();
@@ -47,7 +44,23 @@ namespace MyNote.Data
 										ELSE 30
 									END,
 									CASE text
-										WHEN 'T' THEN 4
+										WHEN 'Tex' THEN 4
+										ELSE 30
+									END,
+									CASE text
+										WHEN 'exts' THEN 5
+										ELSE 30
+									END,
+									CASE text
+										WHEN 'mm' THEN 6
+										ELSE 34
+									END,
+									CASE text
+										WHEN 'exts' THEN 5
+										ELSE 30
+									END,
+									CASE text
+										WHEN 'T' THEN 6
 										ELSE 40
 									END
 								FROM note n

@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyNote.Entites;
 using MyNote.Services;
 
 namespace MyNote.Controllers
@@ -19,9 +18,10 @@ namespace MyNote.Controllers
         }
 
         [HttpGet(Name = "getNotes")]
-        public ActionResult Get()
+        public IActionResult Get()
         {
-            return Ok(_noteService.GetNotesData());
+            var x =  _noteService.GetNotesData();
+            return Ok(x);
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using MyNote.Data.IRepositories;
+﻿using MyNote.Data.IRepositories;
 using MyNote.DBContext;
 using MyNote.Entites;
 

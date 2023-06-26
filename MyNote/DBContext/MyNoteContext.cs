@@ -1,8 +1,5 @@
-﻿using System;
-using System.Reflection;
-using System.Reflection.Metadata;
+﻿using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using MyNote.Entites;
 
 namespace MyNote.DBContext

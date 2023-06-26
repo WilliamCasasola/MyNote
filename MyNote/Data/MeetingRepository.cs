@@ -13,7 +13,7 @@ namespace MyNote.Data
 			_myNote = myNote;
 		}
 
-		public void CreateMeeting(Meeting meeting)
+        public void Add(Meeting meeting)
 		{
 			_myNote.GetMeetings().Add(meeting);
 		}
@@ -25,14 +25,10 @@ namespace MyNote.Data
 
 		public Meeting GetMeeting(int id)
 		{
-			return _myNote.GetMeetings().Where(m =>IsIdEqual(m, id)).FirstOrDefault();			
+			return _myNote.GetMeetings().Where(m => m.T).FirstOrDefault();			
 
 		}
-
-		public bool IsIdEqual(Meeting m, int id)
-		{
-			return m.Id == id;
-		}
+		
 	}
 }
 

@@ -1,5 +1,4 @@
-﻿using System;
-using MyNote.Entites;
+﻿using MyNote.Entites;
 
 namespace MyNote.Data.IRepositories
 {

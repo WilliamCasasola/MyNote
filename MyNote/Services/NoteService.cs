@@ -1,7 +1,4 @@
-﻿using System;
-using MyNote.Data;
-using MyNote.Data.IRepositories;
-using MyNote.DBContext;
+﻿using MyNote.Data.IRepositories;
 using MyNote.Entites;
 
 namespace MyNote.Services

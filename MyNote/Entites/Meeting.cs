@@ -9,7 +9,7 @@ namespace MyNote.Entites
 	{
         [Key]
         [Column("id")]
-        public int Id;
+        public Int64 Id;
         [Column("date")]
         public DateTime Date;
         [Column("name")]
@@ -20,8 +20,8 @@ namespace MyNote.Entites
 		{
 		}
 
-        public int GetId() { return Id; }
-        public void SetId(int id) { Id = id; }
+        public Int64 GetId() { return Id; }
+        public void SetId(Int64 id) { Id = id; }
 
         public DateTime GetDate() { return Date; }
         public void SetDate(DateTime date) { Date = date;  }

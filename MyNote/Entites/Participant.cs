@@ -8,15 +8,15 @@ namespace MyNote.Entites
 	{
 		[Key]
 		[Column("id")]
-		private string Id;
+        public string Id;
 		[Column("name")]
-		private string Name;
+        public string Name;
 		[Column("email")]
-		private string Email;
+        public string Email;
 		[Column("password")]
-		private string Password;
+        public string Password;
 		[Column("username")]
-		private string UserName;
+        public string UserName;
 
 		public Participant()
 		{

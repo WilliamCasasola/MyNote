@@ -8,7 +8,7 @@ namespace MyNote.Entites
 	{
         [Key]
         [Column("id")]
-        public int Id;
+        public Int64 Id;
         [Column("text")]
         public String Text;
         [Column("isGeneral")]
@@ -18,15 +18,15 @@ namespace MyNote.Entites
 		{
 		}
 
-        public Note(int id, string text, bool isGeneral)
+        public Note(Int64 id, string text, bool isGeneral)
         {
             Id = id;
             Text = text;
             IsGeneral = isGeneral;
         }
 
-        public int GetId() { return Id; }
-        public void SetId(int id) { Id = id; }
+        public Int64 GetId() { return Id; }
+        public void SetId(Int64 id) { Id = id; }
 
         public bool GetIsGeneral() { return IsGeneral; }
         public void SetIsGeneral(bool isGeneral) { IsGeneral = isGeneral; }

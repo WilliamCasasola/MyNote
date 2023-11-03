@@ -9,34 +9,34 @@ namespace MyNote.Entites
 	{
         [Key]
         [Column("id")]
-        public int Id;
+        public Int64 Id;
         [Column("idMeeting")]
-        public int IdMeeting;
+        public Int64 IdMeeting;
         [Column("idParticipant")]
-        public int IdParticipant;
+        public Int64 IdParticipant;
         [Column("idNote")]
-        public int IdNote;
+        public Int64 IdNote;
         
         public MeetingNote()
 		{
 		}
 
-        public int GetId()
+        public Int64 GetId()
         {
             return Id;
         }
         
-        public int GetIdMeeting()
+        public Int64 GetIdMeeting()
         {
             return IdMeeting;
         }
 
-        public int GetIdParticipant()
+        public Int64 GetIdParticipant()
         {
             return IdParticipant;
         }
 
-        public int GetIdNote()
+        public Int64 GetIdNote()
         {
             return IdNote;
         }

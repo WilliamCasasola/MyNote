@@ -9,11 +9,11 @@ namespace MyNote.Entites
     {
         [Key]
         [Column("id")]
-        public int Id;
+        public Int64 Id;
         [Column("idMeeting")]
-        public int IdMeeting;
+        public Int64 IdMeeting;
         [Column("idParticipant")]
-        public int IdParticipant;
+        public Int64 IdParticipant;
 
 
         public MeetingParticipant()
@@ -21,10 +21,10 @@ namespace MyNote.Entites
 
         }
 
-        public int GetIdMeeting() { return IdMeeting; }
-        public void SetIdMeeting(int idMeeting) { IdMeeting = idMeeting; }
-        public int GetIdParticipant() { return IdParticipant; }
-        public void SetIdParticipant(int idParticipant) { IdParticipant = idParticipant; }
+        public Int64 GetIdMeeting() { return IdMeeting; }
+        public void SetIdMeeting(Int64 idMeeting) { IdMeeting = idMeeting; }
+        public Int64 GetIdParticipant() { return IdParticipant; }
+        public void SetIdParticipant(Int64 idParticipant) { IdParticipant = idParticipant; }
     }
 }
 

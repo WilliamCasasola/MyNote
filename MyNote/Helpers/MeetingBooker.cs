@@ -34,6 +34,11 @@ namespace MyNote.Helpers
 		{
 			return 1;
 		}
-	}
+        public void CancelBooker()
+        {
+            Console.WriteLine("Cancelling");
+        }
+    }
+	
 }
 

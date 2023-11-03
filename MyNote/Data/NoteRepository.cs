@@ -122,7 +122,8 @@ namespace MyNote.Data
             List<Note> values = new List<Note>();
 
             NoteHandler nH = new NoteHandler();
-			for(int i = 0; i < 10 || i < values.Count; i++)
+			for(int i = 0; i < 10 && i < values.Count; i++)
+
 				nH.AttachDecoration(values[i]);
 			//MyTest(false);
             return values;
@@ -147,7 +148,7 @@ namespace MyNote.Data
 				var specialNotes = _myNote.GetNotes().ToList();
 				for (int i = 0; i < specialNotes.Count; i++)
 				{
-					if (specialNotes[i].IsGeneral)
+					if (specialNotes[i].GetIsGeneral())
 					{
 						if (specialNotes[i].GetText().Length > 10)
 						{
@@ -167,7 +168,7 @@ namespace MyNote.Data
 				int ii = 0;
 				while (!shouldHandleSpecialNote || specialNotes.Count < ii)
 				{
-					if (specialNotes[ii].IsGeneral)
+					if (specialNotes[ii].GetIsGeneral())
 					{
 						shouldHandleSpecialNote = true;
 						if (specialNotes[ii].GetId() > 10)
@@ -270,7 +271,7 @@ namespace MyNote.Data
                 var specialNotes = _myNote.GetNotes().ToList();
                 for (int i = 0; i < specialNotes.Count; i++)
                 {
-                    if (specialNotes[i].IsGeneral)
+                    if (specialNotes[i].GetIsGeneral())
                     {
                         if (specialNotes[i].GetText().Length > 10)
                         {
@@ -290,7 +291,7 @@ namespace MyNote.Data
                 int ii = 0;
                 while (!shouldHandleSpecialNote || specialNotes.Count < ii)
                 {
-                    if (specialNotes[ii].IsGeneral)
+                    if (specialNotes[ii].GetIsGeneral())
                     {
                         shouldHandleSpecialNote = true;
                         if (specialNotes[ii].GetId() > 10)
@@ -372,7 +373,7 @@ namespace MyNote.Data
             }
         }
 
-        private bool MyTestTemp(bool useRawQuery)
+        private bool MyTestTemp2(bool useRawQuery)
         {
             string longQuery = @"
 								SELECT *
@@ -392,7 +393,7 @@ namespace MyNote.Data
                 var specialNotes = _myNote.GetNotes().ToList();
                 for (int i = 0; i < specialNotes.Count; i++)
                 {
-                    if (specialNotes[i].IsGeneral)
+                    if (specialNotes[i].GetIsGeneral())
                     {
                         if (specialNotes[i].GetText().Length > 10)
                         {
@@ -412,7 +413,7 @@ namespace MyNote.Data
                 int ii = 0;
                 while (!shouldHandleSpecialNote || specialNotes.Count < ii)
                 {
-                    if (specialNotes[ii].IsGeneral)
+                    if (specialNotes[ii].GetIsGeneral())
                     {
                         shouldHandleSpecialNote = true;
                         if (specialNotes[ii].GetId() > 10)
@@ -497,4 +498,4 @@ namespace MyNote.Data
     }
 
 }
-//classesInProject.stream().map(c ->c.getName()).collect(Collectors.toCollection(ArrayList::new))
+//classesInProject.stream().map(c ->c.getName()).sorted().collect(Collectors.toCollection(ArrayList::new))

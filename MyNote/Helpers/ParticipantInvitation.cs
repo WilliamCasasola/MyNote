@@ -50,7 +50,7 @@ namespace MyNote.Helpers
 
         public string GenerateConfirmation()
         {
-            return "The date " + _date + " there would be the meeting " + title +
+            return "The date " + _date + " there would be the meeting " + _title +
                 " for " + _numberOfParticipants + "participants and ther will be "
                 + _numberOfTables + " places reserved for you";
         }

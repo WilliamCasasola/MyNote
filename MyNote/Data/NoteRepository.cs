@@ -1,6 +1,8 @@
 ﻿using MyNote.Data.IRepositories;
+using MyNote.Data.RepoHelper;
 using MyNote.DBContext;
 using MyNote.Entites;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MyNote.Data
 {
@@ -21,11 +23,56 @@ namespace MyNote.Data
 		}
 
 		public List<Note> GetNotes()
-		{			
-				var t = _myNote.GetNotes().ToList();
-                return t;            			
+		{
+			GetNotesBad();
+			GetNotes();
+            var t = _myNote.GetNotes().ToList();
+			for(int i = 0; i < t.Count; i++)
+			{
+				HandleNotesName(t[i].GetText());
+			}
+            return t;            			
 		}
+		//EntityParser
 
+
+		private string HandleNotesName(string note)
+		{
+			string titleOfNote = "";
+			List<string> highWords = new List<string> { "Important!", "High Priority" };
+            List<string> lowWords = new List<string> { "Low Priority" };
+			var wordsInNote = note.Split(" ");
+            for (int i = 0; i< wordsInNote.Length; i++)
+			{
+				for(int j = 0; j < highWords.Count; j++)
+				{
+					if (highWords[j] == wordsInNote[i])
+					{
+						titleOfNote = "Pay Attention!";
+					}
+					if(highWords[j] == wordsInNote[i])
+					{
+                        titleOfNote = "Middle priority!";
+                    }
+                }
+			}
+
+            for (int i = 0; i < wordsInNote.Length; i++)
+            {
+                for (int j = 0; j < lowWords.Count; j++)
+                {
+                    if (lowWords[j] == wordsInNote[i])
+                    {
+                        titleOfNote = "Not required attention!";
+                    }
+                    if (lowWords[j] == wordsInNote[i])
+                    {
+                        titleOfNote = "Middle priority!";
+                    }
+                }
+            }
+            return titleOfNote;
+		}
 
         public List<Note> GetNotesBad()
         {
@@ -72,9 +119,103 @@ namespace MyNote.Data
 								AND mn.id = 1 AND m.id = 2 AND p.id = 3 AND
 								p.username <> 'test'
 						";
-            var t = _myNote.GetNotes().ToList();
-            return t;
+            var myNotes = _myNote.GetNotes().ToList();
+            List<Note> values = new List<Note>();
+
+            NoteHandler nH = new NoteHandler();
+			for(int i = 0; i < 10 || i < values.Count; i++)
+				nH.AttachDecoration(values[i]);
+			MyTest(false);
+            return values;
+        }
+
+		private bool MyTest(bool useRawQuery) {
+            string longQuery = @"
+								SELECT *
+								FROM note n
+								INNER JOIN meetingnote mn ON n.id = mn.idNote
+								INNER JOIN participant p ON mn.idParticipant = p.id
+								INNER JOIN meeting m ON mn.idnote = m.id 
+								WHERE (n.id = 1 AND n.id NOT IN (22)
+								OR n.isGeneral = 1 AND n.id = 100)
+								AND mn.id = 1 AND m.id = 2 AND p.id = 3 AND
+								p.username <> 'test'
+						";
+            NoteHandler nH = new NoteHandler();
+
+            if (!useRawQuery)
+			{
+				var specialNotes = _myNote.GetNotes().ToList();
+				for (int i = 0; i < specialNotes.Count; i++)
+				{
+					if (specialNotes[i].IsGeneral)
+					{
+						if (specialNotes[i].GetText().Length > 10)
+						{
+							specialNotes[i].SetIsGeneral(false);
+						}
+						else
+						{
+							specialNotes[i].SetIsGeneral(true);
+						}
+					}
+					else
+					{
+						MyTest(true);
+					}
+				}
+				bool shouldHandleSpecialNote = false;
+				int ii = 0;
+				while (!shouldHandleSpecialNote || specialNotes.Count < ii)
+				{
+					if (specialNotes[ii].IsGeneral)
+					{
+						shouldHandleSpecialNote = true;
+						if (specialNotes[ii].GetId() > 10)
+							Console.WriteLine("Is newer");
+						else
+						{
+							Console.WriteLine("Is older");
+						}
+					}
+					ii++;
+				}
+                foreach (var t in specialNotes)
+                {
+                    string words = "";
+                    string and = "and";
+                    string or = "or";
+                    var wordsInText = t.GetText().Split(" ");
+                    for (int i = 0; i < wordsInText.Length; i++)
+                    {
+                        if (wordsInText[i].Contains(and)) words += and;
+                        if (wordsInText[i].Contains(or)) words += or;
+
+                    }
+                    //Todo: This should be saved in a log file
+                    if (!string.IsNullOrEmpty(words))
+                        Console.WriteLine("The note constiains linked words");
+                }
+                return shouldHandleSpecialNote;
+			}
+			else
+			{
+				//Implement the raw query
+				bool notImplemented = true;
+				return notImplemented;
+			}			
+        }
+
+		public int GetNumberWordsStartingWithAInNote(Note notes)
+		{
+			if (notes == null) return 0;
+			else
+			{
+				if (string.IsNullOrEmpty(notes.GetText())) return 0;
+				else return notes.GetText().Split(" ").Where(x => x[0].Equals("A")).Count();
+			}
         }
     }
+	
 }
 

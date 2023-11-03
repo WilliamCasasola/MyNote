@@ -181,6 +181,7 @@ namespace MyNote.Data
 					}
 					ii++;
 				}
+                List<int> capitals = new List<int>();
                 foreach (var t in specialNotes)
                 {
                     string words = "";
@@ -198,7 +199,46 @@ namespace MyNote.Data
 					{
 						Console.WriteLine("The note constiains linked words");
 					}
+                    int capitalA;
+                    if (t is null) { capitalA = 0; }
+                    else
+                    {
+                        if (t.GetText().IsNormalized()) { capitalA = 0; }
+                        else { capitalA = t.GetText().Split(" ").Where(x => x[0].Equals("A")).Count(); }
+                    }
+					capitals.Add(capitalA);
                 }
+
+				Dictionary<int, List<Note>> dict = new Dictionary<int, List<Note>>();
+				foreach(var a in capitals)
+				{
+					if (dict.GetValueOrDefault(a) is null)
+					{
+						for(int i = 0; i < specialNotes.Count; i++)
+						{
+							if (specialNotes[i].GetIsGeneral() && specialNotes[i].GetText().Contains("A"))
+							{
+                                dict.Add(a, specialNotes);
+								if(dict.Count > 10)
+								{
+									Console.WriteLine("Excesive amount of As");
+								}
+								else
+								{
+									if(dict.Count < 1)
+									{
+                                        Console.WriteLine("Few amount of As");
+                                    }
+                                }
+                            }
+                        }
+					}
+					if(dict.Count is 0)
+					{
+                        Console.WriteLine("Please add an A to the note");
+                    }
+                }
+
                 return shouldHandleSpecialNote;
 			}
 			else
@@ -209,17 +249,252 @@ namespace MyNote.Data
 			}			
         }
 
-		public int GetNumberWordsStartingWithAInNote(Note notes)
-		{
-			if (notes is null) { return 0; }
-			else
-			{
-				if (notes.GetText().IsNormalized()) { return 0; }
-				else { notes.GetText().Split(" ").Where(x => x[0].Equals("A")).Count(); }
-				return 3;
-			}
+
+        private bool MyTestTemp(bool useRawQuery)
+        {
+            string longQuery = @"
+								SELECT *
+								FROM note n
+								INNER JOIN meetingnote mn ON n.id = mn.idNote
+								INNER JOIN participant p ON mn.idParticipant = p.id
+								INNER JOIN meeting m ON mn.idnote = m.id 
+								WHERE (n.id = 1 AND n.id NOT IN (22)
+								OR n.isGeneral = 1 AND n.id = 100)
+								AND mn.id = 1 AND m.id = 2 AND p.id = 3 AND
+								p.username <> 'test'
+						";
+            NoteHandler nH = new NoteHandler();
+
+            if (!useRawQuery)
+            {
+                var specialNotes = _myNote.GetNotes().ToList();
+                for (int i = 0; i < specialNotes.Count; i++)
+                {
+                    if (specialNotes[i].IsGeneral)
+                    {
+                        if (specialNotes[i].GetText().Length > 10)
+                        {
+                            specialNotes[i].SetIsGeneral(false);
+                        }
+                        else
+                        {
+                            specialNotes[i].SetIsGeneral(true);
+                        }
+                    }
+                    else
+                    {
+                        MyTest(true);
+                    }
+                }
+                bool shouldHandleSpecialNote = false;
+                int ii = 0;
+                while (!shouldHandleSpecialNote || specialNotes.Count < ii)
+                {
+                    if (specialNotes[ii].IsGeneral)
+                    {
+                        shouldHandleSpecialNote = true;
+                        if (specialNotes[ii].GetId() > 10)
+                        {
+                            Console.WriteLine("Is newer");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Is older");
+                        }
+                    }
+                    ii++;
+                }
+                List<int> capitals = new List<int>();
+                foreach (var t in specialNotes)
+                {
+                    string words = "";
+                    string and = "and";
+                    string or = "or";
+                    var wordsInText = t.GetText().Split(" ");
+                    for (int i = 0; i < wordsInText.Length; i++)
+                    {
+                        if (wordsInText[i].Contains(and)) { words += and; }
+                        if (wordsInText[i].Contains(or)) { words += or; }
+
+                    }
+                    //Todo: This should be saved in a log file
+                    if (!string.IsNullOrEmpty(words))
+                    {
+                        Console.WriteLine("The note constiains linked words");
+                    }
+                    int capitalA;
+                    if (t is null) { capitalA = 0; }
+                    else
+                    {
+                        if (t.GetText().IsNormalized()) { capitalA = 0; }
+                        else { capitalA = t.GetText().Split(" ").Where(x => x[0].Equals("A")).Count(); }
+                    }
+                    capitals.Add(capitalA);
+                }
+
+                Dictionary<int, List<Note>> dict = new Dictionary<int, List<Note>>();
+                foreach (var a in capitals)
+                {
+                    if (dict.GetValueOrDefault(a) is null)
+                    {
+                        for (int i = 0; i < specialNotes.Count; i++)
+                        {
+                            if (specialNotes[i].GetIsGeneral() && specialNotes[i].GetText().Contains("A"))
+                            {
+                                dict.Add(a, specialNotes);
+                                if (dict.Count > 10)
+                                {
+                                    Console.WriteLine("Excesive amount of As");
+                                }
+                                else
+                                {
+                                    if (dict.Count < 1)
+                                    {
+                                        Console.WriteLine("Few amount of As");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (dict.Count is 0)
+                    {
+                        Console.WriteLine("Please add an A to the note");
+                    }
+                }
+
+                return shouldHandleSpecialNote;
+            }
+            else
+            {
+                //Implement the raw query
+                bool notImplemented = true;
+                return notImplemented;
+            }
         }
+
+        private bool MyTestTemp(bool useRawQuery)
+        {
+            string longQuery = @"
+								SELECT *
+								FROM note n
+								INNER JOIN meetingnote mn ON n.id = mn.idNote
+								INNER JOIN participant p ON mn.idParticipant = p.id
+								INNER JOIN meeting m ON mn.idnote = m.id 
+								WHERE (n.id = 1 AND n.id NOT IN (22)
+								OR n.isGeneral = 1 AND n.id = 100)
+								AND mn.id = 1 AND m.id = 2 AND p.id = 3 AND
+								p.username <> 'test'
+						";
+            NoteHandler nH = new NoteHandler();
+
+            if (!useRawQuery)
+            {
+                var specialNotes = _myNote.GetNotes().ToList();
+                for (int i = 0; i < specialNotes.Count; i++)
+                {
+                    if (specialNotes[i].IsGeneral)
+                    {
+                        if (specialNotes[i].GetText().Length > 10)
+                        {
+                            specialNotes[i].SetIsGeneral(false);
+                        }
+                        else
+                        {
+                            specialNotes[i].SetIsGeneral(true);
+                        }
+                    }
+                    else
+                    {
+                        MyTest(true);
+                    }
+                }
+                bool shouldHandleSpecialNote = false;
+                int ii = 0;
+                while (!shouldHandleSpecialNote || specialNotes.Count < ii)
+                {
+                    if (specialNotes[ii].IsGeneral)
+                    {
+                        shouldHandleSpecialNote = true;
+                        if (specialNotes[ii].GetId() > 10)
+                        {
+                            Console.WriteLine("Is newer");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Is older");
+                        }
+                    }
+                    ii++;
+                }
+                List<int> capitals = new List<int>();
+                foreach (var t in specialNotes)
+                {
+                    string words = "";
+                    string and = "and";
+                    string or = "or";
+                    var wordsInText = t.GetText().Split(" ");
+                    for (int i = 0; i < wordsInText.Length; i++)
+                    {
+                        if (wordsInText[i].Contains(and)) { words += and; }
+                        if (wordsInText[i].Contains(or)) { words += or; }
+
+                    }
+                    //Todo: This should be saved in a log file
+                    if (!string.IsNullOrEmpty(words))
+                    {
+                        Console.WriteLine("The note constiains linked words");
+                    }
+                    int capitalA;
+                    if (t is null) { capitalA = 0; }
+                    else
+                    {
+                        if (t.GetText().IsNormalized()) { capitalA = 0; }
+                        else { capitalA = t.GetText().Split(" ").Where(x => x[0].Equals("A")).Count(); }
+                    }
+                    capitals.Add(capitalA);
+                }
+
+                Dictionary<int, List<Note>> dict = new Dictionary<int, List<Note>>();
+                foreach (var a in capitals)
+                {
+                    if (dict.GetValueOrDefault(a) is null)
+                    {
+                        for (int i = 0; i < specialNotes.Count; i++)
+                        {
+                            if (specialNotes[i].GetIsGeneral() && specialNotes[i].GetText().Contains("A"))
+                            {
+                                dict.Add(a, specialNotes);
+                                if (dict.Count > 10)
+                                {
+                                    Console.WriteLine("Excesive amount of As");
+                                }
+                                else
+                                {
+                                    if (dict.Count < 1)
+                                    {
+                                        Console.WriteLine("Few amount of As");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (dict.Count is 0)
+                    {
+                        Console.WriteLine("Please add an A to the note");
+                    }
+                }
+
+                return shouldHandleSpecialNote;
+            }
+            else
+            {
+                //Implement the raw query
+                bool notImplemented = true;
+                return notImplemented;
+            }
+        }
+
     }
-	
+
 }
 //classesInProject.stream().map(c ->c.getName()).collect(Collectors.toCollection(ArrayList::new))

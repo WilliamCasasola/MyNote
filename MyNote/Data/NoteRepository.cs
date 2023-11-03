@@ -2,7 +2,6 @@
 using MyNote.Data.RepoHelper;
 using MyNote.DBContext;
 using MyNote.Entites;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace MyNote.Data
 {
@@ -46,11 +45,11 @@ namespace MyNote.Data
 			{
 				for(int j = 0; j < highWords.Count; j++)
 				{
-					if (highWords[j] == wordsInNote[i])
+					if (highWords[j].Equals(wordsInNote[i]))
 					{
 						titleOfNote = "Pay Attention!";
 					}
-					if(highWords[j] == wordsInNote[i])
+					if(highWords[j].Equals(wordsInNote[i]))
 					{
                         titleOfNote = "Middle priority!";
                     }
@@ -61,11 +60,11 @@ namespace MyNote.Data
             {
                 for (int j = 0; j < lowWords.Count; j++)
                 {
-                    if (lowWords[j] == wordsInNote[i])
+                    if (lowWords[j].Equals(wordsInNote[i]))
                     {
                         titleOfNote = "Not required attention!";
                     }
-                    if (lowWords[j] == wordsInNote[i])
+                    if (lowWords[j].Equals(wordsInNote[i]))
                     {
                         titleOfNote = "Middle priority!";
                     }
@@ -125,7 +124,7 @@ namespace MyNote.Data
             NoteHandler nH = new NoteHandler();
 			for(int i = 0; i < 10 || i < values.Count; i++)
 				nH.AttachDecoration(values[i]);
-			MyTest(false);
+			//MyTest(false);
             return values;
         }
 
@@ -172,7 +171,9 @@ namespace MyNote.Data
 					{
 						shouldHandleSpecialNote = true;
 						if (specialNotes[ii].GetId() > 10)
+						{
 							Console.WriteLine("Is newer");
+						}
 						else
 						{
 							Console.WriteLine("Is older");
@@ -188,13 +189,15 @@ namespace MyNote.Data
                     var wordsInText = t.GetText().Split(" ");
                     for (int i = 0; i < wordsInText.Length; i++)
                     {
-                        if (wordsInText[i].Contains(and)) words += and;
-                        if (wordsInText[i].Contains(or)) words += or;
+						if (wordsInText[i].Contains(and)) { words += and; }
+						if (wordsInText[i].Contains(or)) { words += or; }
 
                     }
-                    //Todo: This should be saved in a log file
-                    if (!string.IsNullOrEmpty(words))
-                        Console.WriteLine("The note constiains linked words");
+					//Todo: This should be saved in a log file
+					if (!string.IsNullOrEmpty(words))
+					{
+						Console.WriteLine("The note constiains linked words");
+					}
                 }
                 return shouldHandleSpecialNote;
 			}
@@ -208,14 +211,15 @@ namespace MyNote.Data
 
 		public int GetNumberWordsStartingWithAInNote(Note notes)
 		{
-			if (notes == null) return 0;
+			if (notes is null) { return 0; }
 			else
 			{
-				if (string.IsNullOrEmpty(notes.GetText())) return 0;
-				else return notes.GetText().Split(" ").Where(x => x[0].Equals("A")).Count();
+				if (notes.GetText().IsNormalized()) { return 0; }
+				else { notes.GetText().Split(" ").Where(x => x[0].Equals("A")).Count(); }
+				return 3;
 			}
         }
     }
 	
 }
-
+//classesInProject.stream().map(c ->c.getName()).collect(Collectors.toCollection(ArrayList::new))

@@ -1,5 +1,4 @@
-﻿using System;
-using MyNote.Entites;
+﻿using MyNote.Entites;
 
 namespace MyNote.Data.RepoHelper
 {
@@ -11,7 +10,7 @@ namespace MyNote.Data.RepoHelper
 
         public Note AttachDecoration(Note note)
 		{
-			if(note.GetText().Length == 0)
+			if(note.GetText().Length is 0)
 			{
 				note.SetText(note.GetId() + " " + note.GetId());
 				return note;
@@ -27,8 +26,8 @@ namespace MyNote.Data.RepoHelper
 			var wordsInText = text.Split(" ");
 			for(int i = 0; i < wordsInText.Length; i++)
 			{
-				if (wordsInText[i].Contains(and)) words += and;
-				if (wordsInText[i].Contains(or)) words += or;
+				if (wordsInText[i].Contains(and)) { words += and; }
+				if (wordsInText[i].Contains(or)) { words += or; }
 
             }
             return words;

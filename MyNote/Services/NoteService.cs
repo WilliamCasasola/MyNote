@@ -1,4 +1,5 @@
 ﻿using MyNote.Data.IRepositories;
+using MyNote.DTOs;
 using MyNote.Entites;
 
 namespace MyNote.Services
@@ -14,6 +15,11 @@ namespace MyNote.Services
 		public List<Note> GetNotesData()
 		{
 			return _note.GetNotes();
+		}
+
+		public NoteDTO GetNote(Int64 id)
+		{
+			return _note.GetNote(id);
 		}
 	}
 }

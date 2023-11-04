@@ -1,6 +1,7 @@
 ﻿using MyNote.Data.IRepositories;
 using MyNote.Data.RepoHelper;
 using MyNote.DBContext;
+using MyNote.DTOs;
 using MyNote.Entites;
 
 namespace MyNote.Data
@@ -33,6 +34,20 @@ namespace MyNote.Data
             return t;            			
 		}
 		//EntityParser
+
+        public NoteDTO GetNote(Int64 id)
+        {
+            Note note = _myNote.GetNotes().Where(n => n.GetId().Equals(id)).FirstOrDefault();
+            if(note is not null)
+            {
+                NoteDTO noteDto = new NoteDTO();
+                noteDto.SetId(note.GetId());
+                noteDto.SetIsGeneral(note.GetIsGeneral());
+                noteDto.SetText(note.GetText());
+                return noteDto;
+            }
+            return null;
+        }
 
 
 		private string HandleNotesName(string note)

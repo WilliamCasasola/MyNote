@@ -1,6 +1,6 @@
-﻿using System;
-using MyNote.Data.IRepositories;
+﻿using MyNote.Data.IRepositories;
 using MyNote.DBContext;
+using MyNote.DTOs;
 using MyNote.Entites;
 
 namespace MyNote.Data
@@ -23,10 +23,17 @@ namespace MyNote.Data
 			_myNote.GetMeetingParticipants().Add(meetingParticipant);
 		}
 
-		public Meeting GetMeeting(int id)
+		public MeetingDTO GetMeeting(Int64 id)
 		{
-			return _myNote.GetMeetings().Where(m => m.T).FirstOrDefault();			
-
+			Meeting meeting = _myNote.GetMeetings().Where(m => m.GetId().Equals(id)).FirstOrDefault();
+			if (meeting is not null) {
+				MeetingDTO meetingDTO = new MeetingDTO();
+				meeting.SetId(meeting.GetId());
+				meeting.SetDate(meeting.GetDate());
+				meeting.SetName(meeting.GetName());
+				return meetingDTO;
+			}
+			return null;
 		}
 		
 	}

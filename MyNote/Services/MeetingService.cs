@@ -1,5 +1,6 @@
 ﻿using MyNote.Data.IRepositories;
 using MyNote.DBContext;
+using MyNote.DTOs;
 using MyNote.Entites;
 
 namespace MyNote.Services
@@ -22,6 +23,16 @@ namespace MyNote.Services
         public void Add(Meeting meeting)
         {
             _myNote.GetMeetings().Add(meeting);
+        }
+
+        public List<Meeting> GetMeetings()
+        {
+            return _myNote.GetMeetings().ToList();
+        }
+
+        public MeetingDTO GetMeeting(Int64 id)
+        {
+            return _meetingRepo.GetMeeting(id);
         }
     }
 }

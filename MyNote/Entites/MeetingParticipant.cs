@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyNote.Entites
@@ -13,7 +12,7 @@ namespace MyNote.Entites
         [Column("idMeeting")]
         public Int64 IdMeeting;
         [Column("idParticipant")]
-        public Int64 IdParticipant;
+        public string IdParticipant;
 
 
         public MeetingParticipant()
@@ -23,8 +22,8 @@ namespace MyNote.Entites
 
         public Int64 GetIdMeeting() { return IdMeeting; }
         public void SetIdMeeting(Int64 idMeeting) { IdMeeting = idMeeting; }
-        public Int64 GetIdParticipant() { return IdParticipant; }
-        public void SetIdParticipant(Int64 idParticipant) { IdParticipant = idParticipant; }
+        public string GetIdParticipant() { return IdParticipant; }
+        public void SetIdParticipant(string idParticipant) { IdParticipant = idParticipant; }
     }
 }
 

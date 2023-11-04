@@ -19,11 +19,16 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<MyNoteContext>();
 
+builder.Services.AddScoped<ICalendarRepository, CalendarRepository>();
 builder.Services.AddScoped<IMeetingRepository, MeetingRepository>();
 builder.Services.AddScoped<INoteRepository, NoteRepository>();
 builder.Services.AddScoped<IParticipantRepository, ParticipantRepository>();
 
+builder.Services.AddScoped<CalendarService>();
+builder.Services.AddScoped<MeetingService>();
 builder.Services.AddScoped<NoteService>();
+builder.Services.AddScoped<ParticipantService>();
+
 
 var app = builder.Build();
 

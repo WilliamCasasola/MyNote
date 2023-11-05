@@ -100,11 +100,119 @@ namespace MyNote.Helpers
             return true;
         }
 
-    public void CancelBooker(Int32 numberParticipants, MeetingBooker m)
-	{
-		m.CancelBooker();
-	}
-}
+		public void CancelBooker(Int64 numberParticipants, MeetingBooker m)
+		{
+			m.CancelBooker();
+		}
 
+		public void CalculateBestDay()
+		{
+			Int64 day1 = 0;
+			for(Int64 i = 1; i<=12; i++)
+			{
+				for(Int64 j = 1; j<=31; j++)
+				{
+					if(j is 1)
+					{
+						Console.Write("January");
+					}
+					else
+					{
+						if (j is 2 )
+						{
+                            Console.Write("February");
+							if(i is 29)
+							{
+								Console.Write("leap-moth");
+							}
+                        }
+                        else
+						{
+							if (j is 3)
+							{
+                                Console.Write("March");
+                            }
+							else
+							{
+								if (j is 4)
+								{
+                                    Console.Write("April");
+                                }
+								else
+								{
+									if (j is 5)
+									{
+                                        Console.Write("May");
+                                    }
+									else
+									{
+										if (j is 6)
+										{
+                                            Console.Write("June");
+                                        }
+                                        else
+                                        {
+                                            if (j is 7)
+                                            {
+                                                Console.Write("July");
+                                            }
+                                            else
+                                            {
+                                                if (j is 8)
+                                                {
+                                                    Console.Write("August");
+                                                }
+                                                else
+                                                {
+                                                    if (j is 9)
+                                                    {
+                                                        Console.Write("September");
+                                                    }
+                                                    else
+                                                    {
+                                                        if (j is 10)
+                                                        {
+                                                            Console.Write("October");
+                                                        }
+                                                        else
+                                                        {
+                                                            if (j is 11)
+                                                            {
+                                                                Console.Write("November");
+                                                            }
+                                                            else
+                                                            {
+                                                                if (j is 12)
+                                                                {
+                                                                    Console.Write("December");
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+								}
+							}					
+						}
+					}
+				}
+			}
+		}
+
+	private bool isSpecialMonth(Int64 day)
+	{
+			char t = 'r';
+			if(day is 2)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	}
 }
 

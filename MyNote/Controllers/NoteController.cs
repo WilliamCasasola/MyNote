@@ -5,7 +5,7 @@ namespace MyNote.Controllers
 {
 
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]/[action]")]
     public class NoteController : ControllerBase
     {
         private readonly ILogger<NoteController> _logger;

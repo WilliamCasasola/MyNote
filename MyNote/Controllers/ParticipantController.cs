@@ -1,11 +1,12 @@
-﻿using System;
-using MyNote.DTOs;
+﻿using Microsoft.AspNetCore.Mvc;
 using MyNote.Inputs;
 using MyNote.Services;
 
 namespace MyNote.Controllers
 {
-	public class ParticipantController
+    [ApiController]
+    [Route("api/[controller]/[action]")]
+    public class ParticipantController : ControllerBase
 	{
         private readonly CalendarService _calendarService;
         private readonly MeetingService _meetingService;
@@ -24,40 +25,47 @@ namespace MyNote.Controllers
 			_participantService = participantService;
 		}
 
-		public ParticipantDTO GetParticipant(string id)
+        [HttpGet(Name = "getParticipant")]
+        public IActionResult GetParticipant(string id)
 		{
-			return _participantService.GetParticipant(id);
+			return Ok(_participantService.GetParticipant(id));
 		}
 
-        public List<MeetingDTO> GetMeetingsOfParticipant(string participantId)
+        [HttpGet(Name = "getMeetingsOfParticipantById")]
+        public IActionResult GetMeetingsOfParticipant(string participantId)
         {
-            return _participantService.GetMeetingsOfParticipant(participantId);
+            return Ok(_participantService.GetMeetingsOfParticipant(participantId));
         }
 
-        public List<NoteDTO> GetNotesOfParticipantInMeeting(string participantId, Int64 meetingId)
+        [HttpGet(Name = "getNotesOfParticipantInMeeting")]
+        public IActionResult GetNotesOfParticipantInMeeting(string participantId, Int64 meetingId)
         {
-            return _participantService.GetNotesOfParticipantInMeeting(participantId, meetingId);
+            return Ok(_participantService.GetNotesOfParticipantInMeeting(participantId, meetingId));
         }
 
-        public void CreateParticipant(ParticipantDTO participant)
+        [HttpPost(Name = "createParticipant")]
+        public IActionResult CreateParticipant(ParticipantDTO participant)
         {
             _participantService.CreateParticipant(participant);
+            return Ok();
         }
 
-        public MeetingDTO GetMeeting(Int64 id)
+        [HttpGet(Name = "getMeetingById")]
+        public IActionResult GetMeeting(Int64 id)
         {
-            return _meetingService.GetMeeting(id);
+            return Ok(_meetingService.GetMeeting(id));
         }
 
-        public NoteDTO GetNote(Int64 id)
+        [HttpGet(Name = "getParticipantNotes")]
+        public IActionResult GetParticipantNotes(Int64 id)
         {
-            return _noteService.GetNote(id);
+            return Ok(_noteService.GetNote(id));
         }
 
-        public CalendarDTO GetCalendar(Int64 id)
+        [HttpGet(Name = "getCalendar")]
+        public IActionResult GetCalendar(Int64 id)
         {
-
-            return _calendarService.GetCalendar(id);
+            return Ok(_calendarService.GetCalendar(id));
         }
 
     }

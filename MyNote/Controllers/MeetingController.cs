@@ -4,7 +4,7 @@ using MyNote.Services;
 namespace MyNote.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]/[action]")]
     public class MeetingController : ControllerBase
     {
         private readonly ILogger<MeetingController> _logger;
@@ -17,7 +17,7 @@ namespace MyNote.Controllers
         }
 
         [HttpGet(Name = "getMeeting")]
-        public IActionResult GetCanceledMeetings(int meetingId)
+        public IActionResult getMeeting(int meetingId)
         {
             var x = _meetingService.GetMeetings();
             return Ok(x);
@@ -29,7 +29,7 @@ namespace MyNote.Controllers
             var x = _meetingService.GetMeetings();
             return Ok(x);
         }
-
+        
         [HttpGet(Name = "getTodayMeetings")]
         public IActionResult GetTodayMeetings()
         {

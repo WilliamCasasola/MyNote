@@ -17,7 +17,7 @@ namespace MyNote.Data
 
 		public List<Participant> GetParticipants()
 		{
-			return _myNote.Participants.ToList();
+			return _myNote.GetParticipants().ToList();
 		}
 
 		public void CreateParticipant(ParticipantDTO participant)
@@ -33,7 +33,7 @@ namespace MyNote.Data
 
         public ParticipantDTO GetParticipant(string id)
         {
-			Participant p = _myNote.Participants
+			Participant p = _myNote.GetParticipants()
                 .Where(p => p.GetId().Equals(id)).FirstOrDefault();
 			if(p is not null)
 			{
@@ -57,16 +57,16 @@ namespace MyNote.Data
 			MeetingParticipant mp = new MeetingParticipant();
 			mp.SetIdMeeting(meetingId);
 			mp.SetIdParticipant(participantId);
-			_myNote.MeetingParticipants.Add(mp);
+			_myNote.GetMeetingParticipants().Add(mp);
 		}
 
         public List<MeetingDTO> GetMeetingsOfParticipant(string participantId)
         {            
-			List<MeetingParticipant> meetingsP = _myNote.MeetingParticipants.Where(m => m.GetIdParticipant().Equals(participantId)).ToList();
+			List<MeetingParticipant> meetingsP = _myNote.GetMeetingParticipants().Where(m => m.GetIdParticipant().Equals(participantId)).ToList();
 			List<MeetingDTO> meetings = new List<MeetingDTO>();
 			foreach(MeetingParticipant mp in meetingsP)
 			{
-				Meeting m = _myNote.Meetings.Where(m => m.GetId().Equals(mp.GetIdMeeting())).FirstOrDefault();
+				Meeting m = _myNote.GetMeetings().Where(m => m.GetId().Equals(mp.GetIdMeeting())).FirstOrDefault();
 				MeetingDTO meeting = new MeetingDTO();
 				meeting.SetDate(m.GetDate());
 				meeting.SetId(m.GetId());
@@ -79,12 +79,12 @@ namespace MyNote.Data
 
         public List<NoteDTO> GetNotesOfParticipantInMeeting(string participantId, Int64 meetingId)
         {
-            List<MeetingNote> meetingsN = _myNote.MeetingNotes.Where(m => m.GetIdParticipant().Equals(participantId)
+            List<MeetingNote> meetingsN = _myNote.GetMeetingNotes().Where(m => m.GetIdParticipant().Equals(participantId)
 			&& m.GetIdMeeting().Equals(meetingId)).ToList();
             List<NoteDTO> notes = new List<NoteDTO>();
             foreach (MeetingNote mn in meetingsN)
             {
-                Note m = _myNote.Notes.Where(m => m.GetId().Equals(mn.GetIdNote())).FirstOrDefault();
+                Note m = _myNote.GetNotes().Where(m => m.GetId().Equals(mn.GetIdNote())).FirstOrDefault();
                 NoteDTO note = new NoteDTO();
                 note.SetId(m.GetId());
                 note.SetIsGeneral(m.GetIsGeneral());

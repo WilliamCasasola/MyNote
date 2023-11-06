@@ -25,25 +25,28 @@ namespace MyNote.Controllers
 			_participantService = participantService;
 		}
 
-        [HttpGet(Name = "getParticipant")]
+       [HttpGet(Name = "getParticipant")]
         public IActionResult GetParticipant(string id)
 		{
-			return Ok(_participantService.GetParticipant(id));
+            var response = _participantService.GetParticipant(id);
+            return Ok(response);
 		}
-
+        
         [HttpGet(Name = "getMeetingsOfParticipantById")]
         public IActionResult GetMeetingsOfParticipant(string participantId)
         {
-            return Ok(_participantService.GetMeetingsOfParticipant(participantId));
+            var response = _participantService.GetMeetingsOfParticipant(participantId);
+            return Ok(response);
         }
-
+         
         [HttpGet(Name = "getNotesOfParticipantInMeeting")]
-        public IActionResult GetNotesOfParticipantInMeeting(string participantId, Int64 meetingId)
+        public IActionResult GetNotesOfParticipantInMeeting(string participantId, Int16 meetingId)
         {
-            return Ok(_participantService.GetNotesOfParticipantInMeeting(participantId, meetingId));
+            var response = _participantService.GetNotesOfParticipantInMeeting(participantId, meetingId);
+            return Ok(response);
         }
 
-        [HttpPost(Name = "createParticipant")]
+       [HttpPost(Name = "createParticipant")]
         public IActionResult CreateParticipant(ParticipantDTO participant)
         {
             _participantService.CreateParticipant(participant);
@@ -53,19 +56,22 @@ namespace MyNote.Controllers
         [HttpGet(Name = "getMeetingById")]
         public IActionResult GetMeeting(Int64 id)
         {
-            return Ok(_meetingService.GetMeeting(id));
+            var response = _meetingService.GetMeeting(id);
+            return Ok(response);
         }
 
         [HttpGet(Name = "getParticipantNotes")]
         public IActionResult GetParticipantNotes(Int64 id)
         {
-            return Ok(_noteService.GetNote(id));
+            var response = _noteService.GetNote(id);
+            return Ok(response);
         }
 
         [HttpGet(Name = "getCalendar")]
         public IActionResult GetCalendar(Int64 id)
         {
-            return Ok(_calendarService.GetCalendar(id));
+            var resopnse = _calendarService.GetCalendar(id);
+            return Ok(resopnse);
         }
 
     }

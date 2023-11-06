@@ -14,13 +14,13 @@ namespace MyNote.Data
 			_myNote = myNote;
 			
 				//_myNote.Database.EnsureCreated();
-				if (!_myNote.Notes.Any())
+				if (!_myNote.GetNotes().Any())
 				{
                     Note n = new Note();
                     n.SetId(1);
                     n.SetText("Texts");
                     n.SetIsGeneral(true);
-                    _myNote.Notes.Add(n);
+                    _myNote.GetNotes().Add(n);
 					_myNote.SaveChanges();
 				}
 		}
@@ -28,7 +28,7 @@ namespace MyNote.Data
 		public List<Note> GetNotes()
 		{
 			GetNotesBad();
-            var t = _myNote.Notes.ToList();
+            var t = _myNote.GetNotes().ToList();
 			for(int i = 0; i < t.Count; i++)
 			{
 				HandleNotesName(t[i].GetText());
@@ -39,7 +39,7 @@ namespace MyNote.Data
 
         public NoteDTO GetNote(Int64 id)
         {
-            Note note = _myNote.Notes.Where(n => n.GetId().Equals(id)).FirstOrDefault();
+            Note note = _myNote.GetNotes().Where(n => n.GetId().Equals(id)).FirstOrDefault();
             if(note is not null)
             {
                 NoteDTO noteDto = new NoteDTO();
@@ -135,7 +135,7 @@ namespace MyNote.Data
 								AND mn.id = 1 AND m.id = 2 AND p.id = 3 AND
 								p.username <> 'test'
 						";
-            var myNotes = _myNote.Notes.ToList();
+            var myNotes = _myNote.GetNotes().ToList();
             List<Note> values = new List<Note>();
 
             NoteHandler nH = new NoteHandler();
@@ -162,7 +162,7 @@ namespace MyNote.Data
 
             if (!useRawQuery)
 			{
-				var specialNotes = _myNote.Notes.ToList();
+				var specialNotes = _myNote.GetNotes().ToList();
 				for (int i = 0; i < specialNotes.Count; i++)
 				{
 					if (specialNotes[i].GetIsGeneral())
@@ -285,7 +285,7 @@ namespace MyNote.Data
 
             if (!useRawQuery)
             {
-                var specialNotes = _myNote.Notes.ToList();
+                var specialNotes = _myNote.GetNotes().ToList();
                 for (int i = 0; i < specialNotes.Count; i++)
                 {
                     if (specialNotes[i].GetIsGeneral())
@@ -407,7 +407,7 @@ namespace MyNote.Data
 
             if (!useRawQuery)
             {
-                var specialNotes = _myNote.Notes.ToList();
+                var specialNotes = _myNote.GetNotes().ToList();
                 for (int i = 0; i < specialNotes.Count; i++)
                 {
                     if (specialNotes[i].GetIsGeneral())

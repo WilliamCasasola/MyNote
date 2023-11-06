@@ -22,12 +22,12 @@ namespace MyNote.Services
 
         public void Add(Meeting meeting)
         {
-            _myNote.Meetings.Add(meeting);
+            _myNote.GetMeetings().Add(meeting);
         }
 
         public List<Meeting> GetMeetings()
         {
-            return _myNote.Meetings.ToList();
+            return _myNote.GetMeetings().ToList();
         }
 
         public MeetingDTO GetMeeting(Int64 id)

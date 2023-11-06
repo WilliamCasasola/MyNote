@@ -19,7 +19,7 @@ namespace MyNote.Services
 		}
 
 		public List<Participant> getParticipants() {
-			return _myNote.Participants.ToList();
+			return _myNote.GetParticipants().ToList();
 		}
 
         public void CreateParticipant(ParticipantDTO participant)

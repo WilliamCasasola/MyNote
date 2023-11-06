@@ -20,12 +20,12 @@ namespace MyNote.Data
 
 		public void CreateMeetingParticipant(MeetingParticipant meetingParticipant)
 		{
-			_myNote.MeetingParticipants.Add(meetingParticipant);
+			_myNote.GetMeetingParticipants().Add(meetingParticipant);
 		}
 
 		public MeetingDTO GetMeeting(Int64 id)
 		{
-			Meeting meeting = _myNote.Meetings.Where(m => m.GetId().Equals(id)).FirstOrDefault();
+			Meeting meeting = _myNote.GetMeetings().Where(m => m.GetId().Equals(id)).FirstOrDefault();
 			if (meeting is not null) {
 				MeetingDTO meetingDTO = new MeetingDTO();
 				meeting.SetId(meeting.GetId());

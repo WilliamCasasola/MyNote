@@ -22,6 +22,7 @@
     <None Remove="DBContext\" />
     <None Remove="Data\IRepositories\" />
     <None Remove="Data\RepoHelper\" />
+    <None Remove="DTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -31,5 +32,6 @@
     <Folder Include="DBContext\" />
     <Folder Include="Data\IRepositories\" />
     <Folder Include="Data\RepoHelper\" />
+    <Folder Include="DTOs\" />
   </ItemGroup>
 </Project>

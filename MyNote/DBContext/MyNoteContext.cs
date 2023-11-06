@@ -31,6 +31,11 @@ namespace MyNote.DBContext
             }
         }
 
+        public DbSet<Meeting> GetMeetings()
+        {
+            return Meetings;
+        }
+
 
         private DbSet<Note> _notes;
 
@@ -40,6 +45,12 @@ namespace MyNote.DBContext
             } set {
                 _notes = value;
             }
+        }
+
+
+        public DbSet<Note> GetNotes()
+        {
+            return Notes;
         }
 
 
@@ -57,7 +68,10 @@ namespace MyNote.DBContext
             }
         }
 
-
+        public DbSet<Participant> GetParticipants()
+        {
+            return Participants;
+        }
 
         public DbSet<MeetingNote> _meetingNotes;
 
@@ -71,6 +85,11 @@ namespace MyNote.DBContext
             {
                 _meetingNotes = value;
             }
+        }
+
+        public DbSet<MeetingNote> GetMeetingNotes()
+        {
+            return MeetingNotes;
         }
 
         public DbSet<MeetingParticipant> _meetingParticipants;
@@ -87,7 +106,10 @@ namespace MyNote.DBContext
             }
         }
 
-
+        public DbSet<MeetingParticipant> GetMeetingParticipants()
+        {
+            return MeetingParticipants;
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

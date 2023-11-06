@@ -18,15 +18,19 @@ namespace MyNote.DBContext
         }
         public DbSet<Meeting> _meetings;
 
-		public DbSet<Meeting> GetMeetings()
-		{
-			return _meetings;
-		}
 
-		public void SetMeetings(DbSet<Meeting> meetings)
-		{
-			_meetings = meetings;
-		}
+        public DbSet<Meeting> Meetings
+        {
+            get
+            {
+                return _meetings;
+            }
+            set
+            {
+                _meetings = value;
+            }
+        }
+
 
         private DbSet<Note> _notes;
 
@@ -38,51 +42,52 @@ namespace MyNote.DBContext
             }
         }
 
-        public DbSet<Note> GetNotes()
-        {
-            return _notes;
-        }
-
-        public void SetMeetings(DbSet<Note> notes)
-        {
-            _notes = notes;
-        }
 
         public DbSet<Participant> _participants;
 
-        public DbSet<Participant> GetParticipants()
+        public DbSet<Participant> Participants
         {
-            return _participants;
+            get
+            {
+                return _participants;
+            }
+            set
+            {
+                _participants = value;
+            }
         }
 
-        public void SetParticipantss(DbSet<Participant> participants)
-        {
-            _participants = participants;
-        }
+
 
         public DbSet<MeetingNote> _meetingNotes;
 
-        public DbSet<MeetingNote> GetMeetingNotes()
+        public DbSet<MeetingNote> MeetingNotes
         {
-            return _meetingNotes;
-        }
-
-        public void SetMeetingNotess(DbSet<MeetingNote> meetingNotes)
-        {
-            _meetingNotes = meetingNotes;
+            get
+            {
+                return _meetingNotes;
+            }
+            set
+            {
+                _meetingNotes = value;
+            }
         }
 
         public DbSet<MeetingParticipant> _meetingParticipants;
 
-        public DbSet<MeetingParticipant> GetMeetingParticipants()
+        public DbSet<MeetingParticipant> MeetingParticipants
         {
-            return _meetingParticipants;
+            get
+            {
+                return _meetingParticipants;
+            }
+            set
+            {
+                _meetingParticipants = value;
+            }
         }
 
-        public void SetMeetings(DbSet<MeetingParticipant> meetingParticipants)
-        {
-            _meetingParticipants = meetingParticipants;
-        }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -94,53 +99,15 @@ namespace MyNote.DBContext
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Map table names
-            modelBuilder.Entity<Note>().ToTable("Note");
-            //     .Property(e => e.GetId())
-            //    .HasConversion<int>();
 
-            modelBuilder.Entity<Note>(entity =>
-            {
-                entity.Property(e => e.Text).HasColumnName("text");
-                entity.Property(e => e.IsGeneral).HasColumnName("isGeneral");
-                entity.Property(e => e.Id).HasColumnName("Id");
+            modelBuilder.Entity<Note>().HasKey(e => e.Id);
+            modelBuilder.Entity<Meeting>().HasKey(e => e.Id);
+            modelBuilder.Entity<Participant>().HasKey(e => e.Id);
+            modelBuilder.Entity<MeetingNote>().HasKey(e => e.Id);
+            modelBuilder.Entity<MeetingParticipant>().HasKey(e => e.Id);
 
-            });
-                                
 
-                //entity.HasKey(e => e.GetId());
-
-           /* modelBuilder.Entity<Meeting>().ToTable("Meeting");
-            modelBuilder.Entity<Meeting>(entity =>
-            {
-                entity.HasKey(e => e.BlogId);
-                entity.HasIndex(e => e.Title).IsUnique();
-                entity.Property(e => e.DateTimeAdd).HasDefaultValueSql("CURRENT_TIMESTAMP");
-            });
-
-            modelBuilder.Entity<MeetingNote>().ToTable("MeetingNote");
-            modelBuilder.Entity<MeetingNote>(entity =>
-            {
-                entity.HasKey(e => e.BlogId);
-                entity.HasIndex(e => e.Title).IsUnique();
-                entity.Property(e => e.DateTimeAdd).HasDefaultValueSql("CURRENT_TIMESTAMP");
-            });
-
-            modelBuilder.Entity<MeetingParticipant>().ToTable("MeetingParticipant");
-            modelBuilder.Entity<MeetingParticipant>(entity =>
-            {
-                entity.HasKey(e => e.BlogId);
-                entity.HasIndex(e => e.Title).IsUnique();
-                entity.Property(e => e.DateTimeAdd).HasDefaultValueSql("CURRENT_TIMESTAMP");
-            });
-
-            modelBuilder.Entity<Participant>().ToTable("Participant");
-            modelBuilder.Entity<Participant>(entity =>
-            {
-                entity.HasKey(e => e.BlogId);
-                entity.HasIndex(e => e.Title).IsUnique();
-                entity.Property(e => e.DateTimeAdd).HasDefaultValueSql("CURRENT_TIMESTAMP");
-            });*/
+          
             base.OnModelCreating(modelBuilder);
         }    
     }

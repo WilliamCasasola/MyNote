@@ -1,26 +1,15 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyNote.Entites
 {
-	public class Participant
+    [Table("Participant")]
+    public class Participant
 	{
-		[Key]
-		[Column("id")]
-        public string Id;
-		[Column("name")]
-        public string Name;
-		[Column("email")]
-        public string Email;
-		[Column("password")]
-        public string Password;
-		[Column("username")]
-        public string UserName;
-
-		public Participant()
-		{
-		}
+        public string Id { get; set; }        
+        public string Name { get; set; }       
+        public string Email { get; set; }        
+        public string Password { get; set; }        
+        public string UserName { get; set; }
 
 		public string GetId() { return Id; }
 

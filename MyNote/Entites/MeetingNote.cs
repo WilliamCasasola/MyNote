@@ -1,26 +1,15 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyNote.Entites
 {
     [Table("MeetingNote")]
     public class MeetingNote
 	{
-        [Key]
-        [Column("id")]
-        public Int64 Id;
-        [Column("idMeeting")]
-        public Int64 IdMeeting;
-        [Column("idParticipant")]
-        public Int64 IdParticipant;
-        [Column("idNote")]
-        public Int64 IdNote;
-        
-        public MeetingNote()
-		{
-		}
-
+        public Int64 Id { get; set; }
+        public Int64 IdMeeting { get; set; }
+        public Int64 IdParticipant { get; set; }
+        public Int64 IdNote { get; set; }
+       
         public Int64 GetId()
         {
             return Id;

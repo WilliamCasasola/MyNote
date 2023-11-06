@@ -1,24 +1,14 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyNote.Entites
 {
     [Table("Meeting")]
 	public class Meeting
 	{
-        [Key]
-        [Column("id")]
-        public Int64 Id;
-        [Column("date")]
-        public DateTime Date;
-        [Column("name")]
-        public string Name;
-        public bool T;
-
-        public Meeting()
-		{
-		}
+        public Int64 Id { get; set; }
+        public DateTime Date { get; set; }
+        public string Name { get; set; }
+        public bool T { get; set; }
 
         public Int64 GetId() { return Id; }
         public void SetId(Int64 id) { Id = id; }

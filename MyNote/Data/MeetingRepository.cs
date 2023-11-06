@@ -15,17 +15,17 @@ namespace MyNote.Data
 
         public void Add(Meeting meeting)
 		{
-			_myNote.GetMeetings().Add(meeting);
+			_myNote.Meetings.Add(meeting);
 		}
 
 		public void CreateMeetingParticipant(MeetingParticipant meetingParticipant)
 		{
-			_myNote.GetMeetingParticipants().Add(meetingParticipant);
+			_myNote.MeetingParticipants.Add(meetingParticipant);
 		}
 
 		public MeetingDTO GetMeeting(Int64 id)
 		{
-			Meeting meeting = _myNote.GetMeetings().Where(m => m.GetId().Equals(id)).FirstOrDefault();
+			Meeting meeting = _myNote.Meetings.Where(m => m.GetId().Equals(id)).FirstOrDefault();
 			if (meeting is not null) {
 				MeetingDTO meetingDTO = new MeetingDTO();
 				meeting.SetId(meeting.GetId());
